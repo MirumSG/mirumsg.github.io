@@ -9,4 +9,4 @@ github_username:  xm-richmedia
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /guides/:title
