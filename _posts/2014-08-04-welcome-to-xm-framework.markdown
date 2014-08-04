@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Introduce to XM Front-end development framework"
 date:   2014-08-04 10:38:44
 categories: jekyll update
 ---
