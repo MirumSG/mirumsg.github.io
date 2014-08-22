@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Introduce to XM Front-end development framework"
-date:   2014-08-04 10:38:44
+title:  "XM Front-end development framework - SCSS Linter Document"
+date:   2014-08-22 16:36:22
 categories: jekyll update
 ---
 
