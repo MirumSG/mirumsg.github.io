@@ -7,6 +7,6 @@ author:
   name:       'xm-richmedia'
   email:      'xm.richmedia@gmail.com'
 markdown:     rdiscount
-permalink:    pretty
+permalink:    /guides/:title
 pygments:     true
 paginate:     5
