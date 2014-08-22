@@ -1,9 +1,9 @@
 # Site settings
-title: XM Front-End Developement Framework and Guidelines
+title: XM Front-End Development Framework and Guidelines
 email: xm.richmedia@gmail.com
 description: "XM Front-End Development frameworks and guidelines"
 baseurl: ""
-url: "http://yourdomain.com"
+url: "http://xm-richmedia.github.io/"
 twitter_username: jekyllrb
 github_username:  xm-richmedia
 
