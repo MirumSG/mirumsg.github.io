@@ -1,118 +1,92 @@
-# HPSTR Jekyll Theme
+**Hyde 1.x has been deprecated for the upcoming Hyde 2.0, [available here](https://github.com/poole/hyde).**
 
-They say three times the charm, so here is another free responsive Jekyll theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. If you've used my previous themes most of this should be familiar territory...
 
-## What HPSTR brings to the table:
+## [Hyde](http://andhyde.com)
 
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Modern and minimal design.
-* Sweet animated menu.
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Comments powered by [Disqus](http://disqus.com) if you choose to enable.
-* Social Sharing links for Facebook, Twitter, and Google+ if you choose to enable.
-* Simple and clear permalink structure.
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page](http://mmistakes.github.io/hpstr-jekyll-theme/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/hpstr-jekyll-theme/code-highlighting-post/) to make your code examples look snazzy
-* [Grunt](http://gruntjs.com) build script for easy theme development
-* [Available in Spanish](https://github.com/cruznick/hpstr-jekyll-theme/tree/es). Thanks [@cruznick](https://github.com/cruznick)!
+An elegant open source, mobile first theme for [Jekyll](https://github.com/mojombo/jekyll). It includes lightweight styles and placeholder content to get you up and running with a simple blog in no time.
 
-![HPSTR Theme Preview screenshot](http://mmistakes.github.io/hpstr-jekyll-theme/images/hpstr-jekyll-theme-preview.jpg)
+![Hyde screenshot](https://f.cloud.github.com/assets/98681/1818325/da6489d8-6ff5-11e3-9b4f-c56b92013e9a.png)
 
----
 
-General notes and suggestions for customizing **HPSTR**.
+## Usage
 
-## Basic Setup for a new Jekyll site
+### 1. Install Jekyll
 
-1. [Install Bundler](http://bundler.io) `gem install bundler` and then install [Jekyll](http://jekyllrb.com) and all dependencies `bundle install`.
-2. Fork the [HPSTR Jekyll Theme repo](https://github.com/mmistakes/hpstr-jekyll-theme/fork).
-3. Clone the repo you just forked and rename it.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data.
-6. Read the documentation below for further customization pointers and documentation.
+Hyde is built for use with Jekyll, so naturally you'll need to install that. On Macs, it's rather straightforward:
 
-[Demo the Theme](http://mmistakes.github.io/hpstr-jekyll-theme)
-
-**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't want on your site.
-
----
-
-## Setup for an Existing Jekyll site
-
-1. Clone the following folders: `_includes`, `_layouts`, `assets`, and `images`.
-2. Clone the following files and personalize content as need: `about.md`, `posts.html`, `index.html`, `tags.html`, and `feed.xml`.
-3. Set the following variables in your `config.yml` file:
-
-``` yaml
-title:            Site Title
-description:      Describe your website here.
-disqus_shortname: shortname
-# Your site's domain goes here. When working locally use localhost server leave blank
-# PS. If you set this wrong stylesheets and scripts won't load and most links will break.
-# PPS. If you leave it blank for local testing home links won't work, they'll be fine for live domains though.
-url:              http://localhost:4000
-
-# Owner/author information
-owner:
-  name:           Your Name
-  avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
-
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Theme Setup
-    url: /theme-setup
-  - title: External Link
-    url: http://mademistakes.com
-    external: true
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-pygments:    true
-markdown:    kramdown
-
-# Amount of posts to show on home page
-paginate: 5
+```bash
+$ gem install jekyll
 ```
 
----
+**Windows users:** Windows users have a bit more work to do, but luckily [@juthilo](https://github.com/juthilo) has your back with his [Run Jekyll on Windows](https://github.com/juthilo/run-jekyll-on-windows) guide.
 
-## More Theme Setup Goodness
+You may also need to install Pygments, the Python syntax highlighter for code snippets that plays nicely with Jekyll. Read more about this [in the Jekyll docs](http://jekyllrb.com/docs/templates/#code_snippet_highlighting).
 
-To learn more about how to customize the theme, include feature images in posts, use the Grunt build script, and some other junk, [read up here](http://mmistakes.github.io/hpstr-jekyll-theme/theme-setup/).
+### 2a. Quick start
 
----
+To help anyone with any level of familiarity with Jekyll quickly get started, Hyde includes everything you need for a basic Jekyll site. To that end, just download Hyde and start up Jekyll.
 
-## Questions?
+### 2b. Roll your own Jekyll site
 
-Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@mmistakes](http://twitter.com/mmistakes) or [file a GitHub Issue](https://github.com/mmistakes/hpstr-jekyll-theme/issues/new). And if you make something cool with this theme feel free to let me know.
+Folks wishing to use Jekyll's templates and styles can do so with a little bit of manual labor. Download Hyde and then copy what you need (likely `_layouts/`, `*.html` files, `atom.xml` for RSS, and `public/` for CSS, JS, etc.).
 
----
+### 3. Running locally
+
+To see your Jekyll site with Hyde applied, start a Jekyll server. In Terminal, from `/hyde` (or whatever your Jekyll site's root directory is named):
+
+```bash
+$ jekyll serve
+```
+
+Open <http://localhost:4000> in your browser, and voilà. You're done.
+
+
+## Options
+
+Hyde includes a few options, typically applied via classes on the `<body>` element.
+
+### Themes
+
+As of v1.1, Hyde ships with optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). In Hyde, a theme simply changes the sidebar's background color and the color of links within blog posts. Here's the red theme in action:
+
+![Hyde in red](https://f.cloud.github.com/assets/98681/1818326/da64f56c-6ff5-11e3-9643-7d0c18157dec.png)
+
+There are eight themes available at this time.
+
+![Hyde theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
+
+To use a theme, add any one of the available theme classes to the `<body>` element like so:
+
+```html
+<body class="theme-base-08">
+  ...
+</body>
+```
+
+To create your own theme, look to the Themes section of [Hyde's CSS](https://github.com/mdo/hyde/blob/master/public/css/hyde.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
+
+### Reverse layout
+
+![Hyde with reverse layout](https://f.cloud.github.com/assets/98681/1818324/da6473f8-6ff5-11e3-9315-692e639fb5c7.png)
+
+Hyde's page orientation can be reversed with a single class.
+
+```html
+<body class="layout-reverse">
+  ...
+</body>
+```
+
+
+## Author
+
+**Mark Otto**
+<https://github.com/mdo>
+<https://twitter.com/mdo>
+
 
 ## License
 
-This theme is free and open source software, distributed under the [The MIT License](https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/LICENSE). So feel free to to modify this theme to suit your needs. 
+Open sourced under the [MIT license](LICENSE.md).
+
+<3
