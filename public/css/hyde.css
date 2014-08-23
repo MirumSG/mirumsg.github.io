@@ -128,11 +128,12 @@ pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
 }
 code {
-  padding: .25em .5em;
+  padding: .20em .5em;
   font-size: 85%;
   color: #bf616a;
   background-color: #f9f9f9;
   border-radius: 3px;
+  border: 1px solid #c0c0c0;
 }
 pre {
   display: block;
@@ -152,6 +153,8 @@ pre code {
   font-size: 13px;
   color: inherit;
   background-color: transparent;
+  border-radius: 0px;
+  border: none;
 }
 .highlight {
   margin-bottom: 15px;
