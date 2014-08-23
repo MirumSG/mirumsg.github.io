@@ -5,8 +5,6 @@ date:   2014-08-23
 categories: js javascript
 ---
 
-
-# JavaScript Style Guide
 ---
 
 ## Basics
