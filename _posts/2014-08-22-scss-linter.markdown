@@ -44,14 +44,17 @@ Below is a list of linters supported by `scss-lint`, ordered alphabetically.
 * [StringQuotes](#stringquotes)
 * [TrailingSemicolon](#trailingsemicolon)
 * [UnnecessaryMantissa](#unnecessarymantissa)
+* [UnnecessaryParentReference](#unnecessaryparentreference)
 * [UrlFormat](#urlformat)
 * [UrlQuotes](#urlquotes)
 * [ZeroUnit](#urlquotes)
 
+<a name="borderzero" class="anchor" aria-hidden="true"></a>
 ## BorderZero
 
 Prefer `border: 0` over `border: none`.
 
+<a name="capitalizationinselector" class="anchor" aria-hidden="true"></a>
 ## CapitalizationInSelector
 
 IDs, classes, types, placeholders, and pseudo-selectors should be all lowercase.
@@ -81,6 +84,7 @@ Configuration Option  | Description
 `ignored_names`       | Array of whitelisted names to not report lints for.
 `ignored_types`       | Array containing list of types of selectors to ignore (valid values are `attribute`, `class`, `element`, `id`, `placeholder`, or `pseudo-selector`)
 
+<a name="colorkeyword" class="anchor" aria-hidden="true"></a>
 ## ColorKeyword
 
 Prefer hexadecimal color codes over color keywords.
@@ -108,6 +112,7 @@ intention-revealing, as seeing the name `$color-text-body` is more descriptive
 than `#333` or `black`. Using color keywords can obfuscate this, as they look
 like variables.
 
+<a name="comment" class="anchor" aria-hidden="true"></a>
 ## Comment
 
 Prefer `//` comments over `/* ... */`.
@@ -128,6 +133,7 @@ generated CSS, whereas `/* ... */` comments do.
 Furthermore, comments should be concise, and using `/* ... */`
 encourages multi-line comments which tend to not be concise.
 
+<a name="compass-linters" class="anchor" aria-hidden="true"></a>
 ## Compass Linters
 
 `scss-lint` includes a set of linters for codebases which use the
@@ -135,10 +141,12 @@ encourages multi-line comments which tend to not be concise.
 
 ###[» Compass Linters Documentation](./compass/README.md)
 
+<a name="debugstatement" class="anchor" aria-hidden="true"></a>
 ## DebugStatement
 
 Reports `@debug` statements (which you probably left behind accidentally).
 
+<a name="declarationorder" class="anchor" aria-hidden="true"></a>
 ## DeclarationOrder
 
 Write `@extend` statements first in rule sets, followed by property
@@ -175,6 +183,7 @@ before the rest of the properties in the rule set.
 Thus, declaring the `@extend` at the top of the rule set reminds the developer
 of this behavior.
 
+<a name="duplicateproperty" class="anchor" aria-hidden="true"></a>
 ## DuplicateProperty
 
 Reports when you define the same property twice in a single rule set.
@@ -208,6 +217,7 @@ more helpful since you don't want to clutter your CSS with fallbacks.
 Otherwise, you may want to consider disabling this check in your
 `.scss-lint.yml` configuration.
 
+<a name="elseplacement" class="anchor" aria-hidden="true"></a>
 ## ElsePlacement
 
 Place `@else` statements on the same line as the preceding curly brace.
@@ -244,6 +254,7 @@ Configuration Option  | Description
 ----------------------|--------------------------------------------------------
 `style`               | `same_line` or `new_line` (default `same_line`)
 
+<a name="emptylinebetweenblocks" class="anchor" aria-hidden="true"></a>
 ## EmptyLineBetweenBlocks
 
 Separate rule, function, and mixin declarations with empty lines.
@@ -289,6 +300,7 @@ Configuration Option        | Description
 ----------------------------|---------------------------------------------------
 `ignore_single_line_blocks` | Don't enforce for single-line blocks (default **true**)
 
+<a name="emptyrule" class="anchor" aria-hidden="true"></a>
 ## EmptyRule
 
 Reports when you have an empty rule set.
@@ -298,6 +310,7 @@ Reports when you have an empty rule set.
 }
 ```
 
+<a name="finalnewline" class="anchor" aria-hidden="true"></a>
 ## FinalNewline
 
 Files should always have a final newline. This results in better diffs when
@@ -311,6 +324,7 @@ Configuration Option | Description
 ---------------------|---------------------------------------------------------
 `present`            | Whether a final newline should be present (default **true**)
 
+<a name="hexlength" class="anchor" aria-hidden="true"></a>
 ## HexLength
 
 You can specify whether you prefer shorthand or long-form hexadecimal
@@ -330,6 +344,7 @@ Configuration Option | Description
 ---------------------|--------------------------------------------
 `style`              | Prefer `short` or `long` (default **short**)
 
+<a name="hexnotation" class="anchor" aria-hidden="true"></a>
 ## HexNotation
 
 Checks if hexadecimal colors are written in lowercase. You can specify which
@@ -339,6 +354,7 @@ Configuration Option | Description
 ---------------------|---------------------------------------------------------
 `style`              | Prefer `lowercase` or `uppercase` (default **lowercase**)
 
+<a name="hexvalidation" class="anchor" aria-hidden="true"></a>
 ## HexValidation
 
 Ensure hexadecimal colors are valid (either three or six digits).
@@ -357,6 +373,7 @@ p {
 }
 ```
 
+<a name="idwithextraneousselector" class="anchor" aria-hidden="true"></a>
 ## IdWithExtraneousSelector
 
 Don't combine additional selectors with an ID selector.
@@ -389,6 +406,7 @@ Even better would be to
 [never use IDs](http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/)
 in the first place.
 
+<a name="indentation" class="anchor" aria-hidden="true"></a>
 ## Indentation
 
 Use two spaces per indentation level.
@@ -414,6 +432,7 @@ Configuration Option | Description
 `character`          | `tab` or `space` (default **space**)
 `width`              | Number of `character`s per indentation level (default **2**)
 
+<a name="leadingzero" class="anchor" aria-hidden="true"></a>
 ## LeadingZero
 
 Don't write leading zeros for numeric values with a decimal point.
@@ -434,6 +453,7 @@ Configuration Option | Description
 ---------------------|---------------------------------------------------------
 `style`              | `exclude_zero` or `include_zero` (default **exclude_zero**)
 
+<a name="mergeableselector" class="anchor" aria-hidden="true"></a>
 ## MergeableSelector
 
 Reports when you define the same selector twice in a single sheet.
@@ -501,6 +521,7 @@ Configuration Option | Description
 ---------------------|------------------------------------------------------------------
 `force_nesting`      | Ensure rule sets which can be nested are nested (default **true**)
 
+<a name="nameformat" class="anchor" aria-hidden="true"></a>
 ## NameFormat
 
 Functions, mixins, and variables should be declared with all lowercase letters
@@ -544,6 +565,7 @@ Configuration Option | Description
 ---------------------|---------------------------------------------------------
 `convention`         | Name of convention to use (`hyphenated_lowercase` (default) or `BEM`), or a regex the name must match
 
+<a name="placeholderinextend" class="anchor" aria-hidden="true"></a>
 ## PlaceholderInExtend
 
 Always use placeholder selectors in `@extend`.
@@ -569,6 +591,7 @@ Sass specifically introduced placeholder selectors in order to be used with
 
 See [Mastering Sass extends and placeholders](http://8gramgorilla.com/mastering-sass-extends-and-placeholders/).
 
+<a name="propertysortorder" class="anchor" aria-hidden="true"></a>
 ## PropertySortOrder
 
 Sort properties in a strict order. By default, will require properties be
@@ -629,6 +652,7 @@ Configuration Option | Description
 `order`              | Array of properties, or the name of a [preset order](https://github.com/causes/scss-lint/tree/master/data/property-sort-orders) (default is `nil`, resulting in alphabetical ordering)
 `ignore_unspecified` | Whether to ignore properties that are not explicitly specified in `order` (default **false**)
 
+<a name="propertyspelling" class="anchor" aria-hidden="true"></a>
 ## PropertySpelling
 
 Reports when you use an unknown CSS property (ignoring vendor-prefixed
@@ -661,6 +685,7 @@ Configuration Option | Description
 ---------------------|---------------------------------------------------------
 `extra_properties`   | List of extra properties to allow
 
+<a name="selectordepth" class="anchor" aria-hidden="true"></a>
 ## SelectorDepth
 
 Don't write selectors with a depth of applicability greater than 3.
@@ -702,6 +727,7 @@ Configuration Option | Description
 ---------------------|---------------------------------------------------------
 `max_depth`          | Maximum depth before reporting errors (default **3**)
 
+<a name="shorthand" class="anchor" aria-hidden="true"></a>
 ## Shorthand
 
 Prefer the shortest shorthand form possible for properties that support it.
@@ -716,6 +742,7 @@ margin: 1px 1px 1px 1px;
 margin: 1px;
 ```
 
+<a name="singlelineperproperty" class="anchor" aria-hidden="true"></a>
 ## SingleLinePerProperty
 
 Properties within rule sets should each reside on their own line.
@@ -749,6 +776,7 @@ Configuration Option          | Description
 ------------------------------|----------------------------------------------
 `allow_single_line_rule_sets` | `true` or `false` (default **true**)
 
+<a name="singlelineperselector" class="anchor" aria-hidden="true"></a>
 ## SingleLinePerSelector
 
 Split selectors onto separate lines after each comma.
@@ -772,6 +800,7 @@ Note that selectors containing interpolation are ignored, since the Sass parser
 cannot construct the selector parse tree at parse time, only at run time (which
 is too late for `scss-lint` to do anything with).
 
+<a name="spaceaftercomma" class="anchor" aria-hidden="true"></a>
 ## SpaceAfterComma
 
 Commas in lists should be followed by a space.
@@ -788,6 +817,7 @@ color: rgba(0,0,0,.1);
 color: rgba(0, 0, 0, .1);
 ```
 
+<a name="spaceafterpropertycolon" class="anchor" aria-hidden="true"></a>
 ## SpaceAfterPropertyColon
 
 Properties should be formatted with a single space separating the colon from
@@ -814,6 +844,7 @@ Configuration Option | Description
 ---------------------|---------------------------------------------------------
 `style`              | `one_space`, `no_space`, `at_least_one_space`, or `aligned` (default **one_space**)
 
+<a name="spaceafterpropertyname" class="anchor" aria-hidden="true"></a>
 ## SpaceAfterPropertyName
 
 Properties should be formatted with no space between the name and the colon.
@@ -828,6 +859,7 @@ margin : 0;
 margin: 0;
 ```
 
+<a name="spacebeforebrace" class="anchor" aria-hidden="true"></a>
 ## SpaceBeforeBrace
 
 Opening braces should be preceded by a single space.
@@ -867,6 +899,7 @@ Configuration Option        | Description
 ----------------------------|---------------------------------------------------
 `allow_single_line_padding` | Allow single line blocks to have extra spaces for nicer formatting (default **false**)
 
+<a name="spacebetweenparens" class="anchor" aria-hidden="true"></a>
 ## SpaceBetweenParens
 
 Parentheses should not be padded with spaces.
@@ -887,6 +920,7 @@ Configuration Option | Description
 ---------------------|---------------------------------------------------------
 `spaces`             | Spaces to require between parentheses (default **0**)
 
+<a name="stringquotes" class="anchor" aria-hidden="true"></a>
 ## StringQuotes
 
 String literals should be written with single quotes unless using double quotes
@@ -914,6 +948,7 @@ Configuration Option | Description
 ---------------------|---------------------------------------------------------
 `style`              | `single_quotes` or `double_quotes` (default `single_quotes`)
 
+<a name="trailingsemicolon" class="anchor" aria-hidden="true"></a>
 ## TrailingSemicolon
 
 Property values, `@extend` directives, `@include` directives, and variable
@@ -944,6 +979,7 @@ CSS allows you to omit the semicolon if the statement is the last statement in
 the rule set. However, this introduces inconsistency and requires anyone adding
 a property after that property to remember to append a semicolon.
 
+<a name="unnecessarymantissa" class="anchor" aria-hidden="true"></a>
 ## UnnecessaryMantissa
 
 Numeric values should not contain unnecessary fractional portions.
@@ -975,6 +1011,7 @@ p { margin: $margin / 2; }
 p { margin: 0.5; }
 ```
 
+<a name="unnecessaryparentreference" class="anchor" aria-hidden="true"></a>
 ## UnnecessaryParentReference
 
 Do not use parent selector references (`&`) when they would otherwise be
@@ -999,6 +1036,7 @@ unnecessary.
 }
 ```
 
+<a name="urlformat" class="anchor" aria-hidden="true"></a>
 ## UrlFormat
 
 URLs should not contain protocols or domain names.
@@ -1018,6 +1056,7 @@ background: url('https://example.com/assets/image.png');
 background: url('assets/image.png');
 ```
 
+<a name="urlquotes" class="anchor" aria-hidden="true"></a>
 ## UrlQuotes
 
 URLs should always be enclosed within quotes.
@@ -1040,6 +1079,7 @@ rather than the different set of rules for literal URLs.
 See the [URL type](http://dev.w3.org/csswg/css-values/#url-value) documentation
 for more information.
 
+<a name="zerounit" class="anchor" aria-hidden="true"></a>
 ## ZeroUnit
 
 Omit length units on zero values.
