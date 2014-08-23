@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "XM Front-end development framework - SCSS Linter Document"
+title:  "SCSS Linter Document"
 date:   2014-08-22 16:36:22
-categories: jekyll update
+categories: scss
 ---
 
 # Linters
