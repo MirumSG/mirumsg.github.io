@@ -8,25 +8,24 @@ layout: default
 <br/>
   <h2>Guidlines</h2>
 <div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <ol>
-      <li>
-        <h4>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-          </a>
-        </h4>
-        <span class="post-date small">{{ post.date | date_to_string }}</span>
-      </li>
-    </ol>
+  <ol>
+    <div class="post">
+    {% for post in paginator.posts %}
+        <li>
+          <h4>
+            <a href="{{ post.url }}">
+              {{ post.title }}
+            </a>
+          </h4>
+          <span class="post-date small">{{ post.date | date_to_string }}</span>
+        </li>
+      <!--<span class="post-date">{{ post.date | date_to_string }}</span>
 
+      {{ post.content }}-->
 
-    <!--<span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}-->
+    {% endfor %}
   </div>
-  {% endfor %}
+  </ol>
 </div>
 
 <!-- Pagination links -->
