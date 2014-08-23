@@ -340,6 +340,11 @@ a:focus {
   color: #9a9a9a;
 }
 
+
+.post-date .small{
+  font-size: 11px;
+}
+
 /* Related posts */
 .related {
   padding-top: 20px;
