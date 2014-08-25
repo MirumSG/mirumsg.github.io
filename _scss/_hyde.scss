@@ -271,3 +271,63 @@ html {
     color: #ff9600;
   }
 
+.open-source__sass, .open-source__node, .open-source__gulp, .open-source__handlebars {
+  display: inline-block;
+  background: url('../images/open-source-logos.png') no-repeat;
+  vertical-align: middle;
+}
+
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), not all, not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){
+  .open-source__sass, .open-source__node, .open-source__gulp, .open-source__handlebars {
+    background-image: url('../images/open-source-logos@2x.png');
+    background-size: 342px 121px;
+  }
+}
+
+
+
+.open-source__sass:not(:last-child), .open-source__node:not(:last-child), .open-source__gulp:not(:last-child), .open-source__handlebars:not(:last-child) {
+  margin-right: 20px;
+  margin-right: 1.25rem;
+}
+.open-source__sass {
+  background-position: 0 0;
+  width: 96px;
+  height: 72px;
+}
+
+.open-source__node {
+  background-position: -100px 0;
+  width: 186px;
+  height: 50px;
+}
+
+.open-source__gulp {
+  background-position: -291px 0;
+  width: 51px;
+  height: 116px;
+}
+
+.open-source__handlebars {
+  background-position: -100px -54px;
+  width: 170px;
+  height: 68px;
+}
+
+
+
+.is-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  opacity: 0;
+}
+
