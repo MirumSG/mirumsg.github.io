@@ -1,0 +1,238 @@
+//colors
+$color_cream_approx: #ffffcc;
+$color_mountain_mist_approx: #999;
+$color_bright_red_approx: #aa0000;
+$color_cornflower_lilac_approx: #ffaaaa;
+$color_bahama_blue_approx: #006699;
+$color_fuscous_gray_approx: #555555;
+$color_azure_radiance_approx: #0099ff;
+$color_persian_green_approx: #009999;
+$color_pink_approx: #ffcccc;
+$color_guardsman_red_approx: #cc0000;
+$color_red_approx: #ff0000;
+$color_deep_fir_approx: #003300;
+$color_snowy_mint_approx: #ccffcc;
+$color_green_approx: #00cc00;
+$color_silver_chalice_approx: #aaaaaa;
+$color_ultramarine_approx: #000099;
+$color_olivine_approx: #99cc66;
+$color_blue_lagoon_approx: #007788;
+$color_blaze_orange_approx: #ff6600;
+$color_fuzzy_wuzzy_brown_approx: #d44950;
+$color_shakespeare_approx: #4f9fcf;
+$color_casal_approx: #336666;
+$color_niagara_approx: #00aa88;
+$color_dell_approx: #336600;
+$color_portage_approx: #9999ff;
+//var is already set
+//$color_mountain_mist_approx: #999999;
+$color_magenta_/_fuchsia_approx: #cc00ff;
+$color_bright_turquoise_approx: #00ccff;
+$color_jelly_bean_approx: #2f6f9f;
+$color_deep_teal_approx: #003333;
+$black: #000000;
+//var is already set
+//$black: black;
+$color_pink_swan_approx: #bbbbbb;
+$color_grenadier_approx: #cc3300;
+$color_keppel_approx: #33aaaa;
+$color_sunglow_approx: #ffcc33;
+
+.hll {
+  background-color: $color_cream_approx;
+}
+.c {
+  color: $color_mountain_mist_approx;
+}
+.err {
+  color: #AA0000;
+  background-color: #FFAAAA;
+}
+.k {
+  color: $color_bahama_blue_approx;
+}
+.o {
+  color: $color_fuscous_gray_approx;
+}
+.cm {
+  color: #0099FF;
+  font-style: italic;
+}
+.cp {
+  color: $color_persian_green_approx;
+}
+.c1 {
+  color: $color_mountain_mist_approx;
+}
+.cs {
+  color: $color_mountain_mist_approx;
+}
+.gd {
+  background-color: #FFCCCC;
+  border: 1px solid #CC0000;
+}
+.ge {
+  font-style: italic;
+}
+.gr {
+  color: #FF0000;
+}
+.gh {
+  color: $color_deep_fir_approx;
+}
+.gi {
+  background-color: #CCFFCC;
+  border: 1px solid #00CC00;
+}
+.go {
+  color: #AAAAAA;
+}
+.gp {
+  color: $color_ultramarine_approx;
+}
+.gs {
+}
+.gu {
+  color: $color_deep_fir_approx;
+}
+.gt {
+  color: #99CC66;
+}
+.kc {
+  color: $color_bahama_blue_approx;
+}
+.kd {
+  color: $color_bahama_blue_approx;
+}
+.kn {
+  color: $color_bahama_blue_approx;
+}
+.kp {
+  color: $color_bahama_blue_approx;
+}
+.kr {
+  color: $color_bahama_blue_approx;
+}
+.kt {
+  color: $color_blue_lagoon_approx;
+}
+.m {
+  color: #FF6600;
+}
+.s {
+  color: $color_fuzzy_wuzzy_brown_approx;
+}
+.na {
+  color: $color_shakespeare_approx;
+}
+.nb {
+  color: $color_casal_approx;
+}
+.nc {
+  color: #00AA88;
+}
+.no {
+  color: $color_dell_approx;
+}
+.nd {
+  color: #9999FF;
+}
+.ni {
+  color: $color_mountain_mist_approx;
+}
+.ne {
+  color: #CC0000;
+}
+.nf {
+  color: #CC00FF;
+}
+.nl {
+  color: #9999FF;
+}
+.nn {
+  color: #00CCFF;
+}
+.nt {
+  color: $color_jelly_bean_approx;
+}
+.nv {
+  color: $color_deep_teal_approx;
+}
+.ow {
+  color: $black;
+}
+.w {
+  color: $color_pink_swan_approx;
+}
+.mf {
+  color: #FF6600;
+}
+.mh {
+  color: #FF6600;
+}
+.mi {
+  color: #FF6600;
+}
+.mo {
+  color: #FF6600;
+}
+.sb {
+  color: #CC3300;
+}
+.sc {
+  color: #CC3300;
+}
+.sd {
+  color: #CC3300;
+  font-style: italic;
+}
+.s2 {
+  color: #CC3300;
+}
+.se {
+  color: #CC3300;
+}
+.sh {
+  color: #CC3300;
+}
+.si {
+  color: #AA0000;
+}
+.sx {
+  color: #CC3300;
+}
+.sr {
+  color: #33AAAA;
+}
+.s1 {
+  color: #CC3300;
+}
+.ss {
+  color: #FFCC33;
+}
+.bp {
+  color: $color_casal_approx;
+}
+.vc {
+  color: $color_deep_teal_approx;
+}
+.vg {
+  color: $color_deep_teal_approx;
+}
+.vi {
+  color: $color_deep_teal_approx;
+}
+.il {
+  color: #FF6600;
+}
+.css {
+  .o {
+    color: $color_mountain_mist_approx;
+    + .nt {
+      color: $color_mountain_mist_approx;
+    }
+  }
+  .nt + .nt {
+    color: $color_mountain_mist_approx;
+  }
+}

@@ -1,0 +1,528 @@
+@import "reset";
+@import "syntax";
+
+//colors
+$color_gallery_approx: #eee;
+$color_tundora_approx: #454441;
+$white: #fff;
+//var is already set
+//$white: white;
+$color_log_cabin_approx: #222;
+$color_fuscous_gray_approx: #555;
+$white_50: rgba(255, 255, 255, 0.5);
+$color_contessa_approx: #bf616a;
+$color_alabaster_approx: #f9f9f9;
+$silver: #c0c0c0;
+//var is already set
+//$silver: silver;
+$boulder: #7a7a7a;
+$color_mine_shaft_approx: #333;
+$color_amber_approx: #ffc000;
+//var is already set
+//$white_50: rgba(255,255,255,.5);
+$color_star_dust_approx: #9a9a9a;
+$color_mountain_mist_approx: #999;
+$black: #000;
+//var is already set
+//$black: black;
+$color_celeste_approx: #ccc;
+$color_wild_sand_approx: #f5f5f5;
+$color_apple_blossom_approx: #ac4142;
+$color_raw_sienna_approx: #d28445;
+$color_rob_roy_approx: #f4bf75;
+$color_chelsea_cucumber_approx: #90a959;
+$color_gulf_stream_approx: #75b5aa;
+$color_hippie_blue_approx: #6a9fb5;
+$color_bouquet_approx: #aa759f;
+$color_potters_clay_approx: #8f5536;
+$color_alto_approx: #ddd;
+$color_desert_storm_approx: #f8f8f8;
+
+//fonts
+$font_0: Droid Sans;
+$font_1: Helvetica;
+$font_2: Arial;
+$font_3: sans-serif;
+$font_4: Menlo;
+$font_5: Monaco;
+$font_6: Courier New;
+$font_7: monospace;
+
+//@extend-elements
+//original selectors
+//h1,  h2,  h3,  h4,  h5,  h6
+%extend_1 {
+  margin: 0 0 10px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+}
+
+//original selectors
+//.pagination a,  .pagination span
+%extend_2 {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+//original selectors
+//table th,  table td
+%extend_3 {
+  padding: 6px 13px;
+  border: 1px solid $color_alto_approx;
+  font-weight: bold;
+}
+
+//original selectors
+//.open-source__sass,  .open-source__node,  .open-source__gulp,  .open-source__handlebars
+%extend_4 {
+  display: inline-block;
+  background: url('../images/open-source-logos.png') no-repeat;
+  vertical-align: middle;
+}
+
+
+* {
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font_0, $font_1, $font_2, $font_3;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color_tundora_approx;
+  background-color: $white;
+}
+@media(min-width: 990px) {
+  .layout-reverse {
+    .masthead {
+      left: auto;
+      right: 0;
+    }
+    .container {
+      margin-left: 10%;
+      margin-right: 35%;
+    }
+  }
+}
+h1 {
+  @extend %extend_1;
+  font-size: 40px;
+}
+h2 {
+  @extend %extend_1;
+  margin-top: 40px;
+  font-size: 32px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $color_gallery_approx;
+}
+h3 {
+  @extend %extend_1;
+  margin-top: 24px;
+  font-size: 24px;
+}
+h4 {
+  @extend %extend_1;
+  margin-top: 16px;
+  font-size: 16px;
+}
+h5 {
+  @extend %extend_1;
+  margin-top: 16px;
+  font-size: 16px;
+}
+h6 {
+  @extend %extend_1;
+  margin-top: 16px;
+  font-size: 16px;
+}
+p {
+  margin: 0 0 15px;
+}
+ul {
+  margin-bottom: 15px;
+}
+ol {
+  margin-bottom: 15px;
+}
+hr {
+  position: relative;
+  margin: 40px 0;
+  border: 0;
+  border-top: 1px solid $color_gallery_approx;
+  border-bottom: 1px solid $white;
+}
+strong {
+  color: $color_log_cabin_approx;
+}
+abbr {
+  background-color: $color_gallery_approx;
+  display: inline-block;
+  padding: 3px;
+  font-size: 13px;
+  font-weight: bold;
+  color: $color_fuscous_gray_approx;
+  //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  text-shadow: 0 1px 1px $white_50;
+  text-transform: uppercase;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 3px;
+}
+code {
+  font-family: $font_4, $font_5, $font_6, $font_7;
+  padding: .20em .5em;
+  font-size: 85%;
+  color: $color_contessa_approx;
+  background-color: $color_alabaster_approx;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 3px;
+  border: 1px solid $silver;
+}
+pre {
+  font-family: $font_4, $font_5, $font_6, $font_7;
+  display: block;
+  margin: 0 0 14px;
+  padding: 15px 20px;
+  font-size: 16px;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  //Instead of the line below you could use @include word-break($value)
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: $color_alabaster_approx;
+  border: 1px solid $silver;
+  code {
+    padding: 0;
+    font-size: 13px;
+    color: inherit;
+    background-color: transparent;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 0;
+    border: none;
+  }
+}
+.highlight {
+  margin-bottom: 15px;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 4px;
+  pre {
+    margin-bottom: 0;
+  }
+}
+blockquote {
+  padding: 5px 30px 5px 25px;
+  margin: 15px 0;
+  border-left: 5px solid $color_gallery_approx;
+  p {
+    margin-bottom: 0;
+    color: $boulder;
+    text-indent: -0.4em;
+    &:before {
+      content: '\201C';
+    }
+    &:after {
+      content: '\201D';
+    }
+  }
+}
+img {
+  display: block;
+  margin: 0 0 15px;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 5px;
+}
+.lead {
+  font-size: 20px;
+}
+a {
+  font-weight: 600;
+  color: $color_log_cabin_approx;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:focus {
+    text-decoration: underline;
+  }
+}
+.masthead {
+  color: $color_mine_shaft_approx;
+  font-weight: 600;
+  background-color: #FFC000;
+  h1 {
+    margin-top: 0;
+    font-family: $font_0, $font_1, $font_2, $font_3;
+    font-weight: 700;
+  }
+  .lead {
+    margin-bottom: 0;
+    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: 0 1px 0 $white;
+  }
+  a {
+    color: $white;
+  }
+}
+.masthead-inner {
+  padding: 20px;
+}
+.colophon {
+  margin-top: 20px;
+  color: $white_50;
+}
+.colophon-links {
+  padding-left: 0;
+  list-style: none;
+  li {
+    color: inherit;
+  }
+}
+@media(min-width: 768px) {
+  .masthead-inner {
+    padding: 40px;
+  }
+}
+.content {
+  padding: 40px 20px;
+}
+.post {
+  margin-bottom: 40px;
+}
+.post-date {
+  display: block;
+  margin: -10px 0 10px;
+  color: $color_star_dust_approx;
+  &.small {
+    font-size: 11px;
+  }
+}
+.related {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-top: 1px solid $color_gallery_approx;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+  h3 {
+    margin-top: 0;
+  }
+  li {
+    small {
+      font-size: 75%;
+      color: $color_mountain_mist_approx;
+    }
+    a:hover {
+      color: $$black;
+      text-decoration: none;
+      small {
+        color: inherit;
+      }
+    }
+  }
+}
+.pagination {
+  overflow: hidden;
+  margin-top: 40px;
+  font-weight: bold;
+  color: $color_celeste_approx;
+  text-align: center;
+  border-top: 1px solid $color_gallery_approx;
+  a {
+    @extend %extend_2;
+    &:first-child {
+      border-right: 1px solid $color_gallery_approx;
+    }
+    &:hover {
+      text-decoration: none;
+      background-color: $color_wild_sand_approx;
+    }
+  }
+  span {
+    @extend %extend_2;
+    &:first-child {
+      border-right: 1px solid $color_gallery_approx;
+    }
+  }
+}
+.theme-base-08 {
+  .masthead {
+    background-color: $color_apple_blossom_approx;
+  }
+  .container a {
+    color: $color_apple_blossom_approx;
+  }
+  .related-posts li a:hover {
+    color: $color_apple_blossom_approx;
+  }
+}
+.theme-base-09 {
+  .masthead {
+    background-color: $color_raw_sienna_approx;
+  }
+  .container a {
+    color: $color_raw_sienna_approx;
+  }
+  .related-posts li a:hover {
+    color: $color_raw_sienna_approx;
+  }
+}
+.theme-base-0a {
+  .masthead {
+    background-color: $color_rob_roy_approx;
+  }
+  .container a {
+    color: $color_rob_roy_approx;
+  }
+  .related-posts li a:hover {
+    color: $color_rob_roy_approx;
+  }
+}
+.theme-base-0b {
+  .masthead {
+    background-color: $color_chelsea_cucumber_approx;
+  }
+  .container a {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .related-posts li a:hover {
+    color: $color_chelsea_cucumber_approx;
+  }
+}
+.theme-base-0c {
+  .masthead {
+    background-color: $color_gulf_stream_approx;
+  }
+  .container a {
+    color: $color_gulf_stream_approx;
+  }
+  .related-posts li a:hover {
+    color: $color_gulf_stream_approx;
+  }
+}
+.theme-base-0d {
+  .masthead {
+    background-color: $color_hippie_blue_approx;
+  }
+  .container a {
+    color: $color_hippie_blue_approx;
+  }
+  .related-posts li a:hover {
+    color: $color_hippie_blue_approx;
+  }
+}
+.theme-base-0e {
+  .masthead {
+    background-color: $color_bouquet_approx;
+  }
+  .container a {
+    color: $color_bouquet_approx;
+  }
+  .related-posts li a:hover {
+    color: $color_bouquet_approx;
+  }
+}
+.theme-base-0f {
+  .masthead {
+    background-color: $color_potters_clay_approx;
+  }
+  .container a {
+    color: $color_potters_clay_approx;
+  }
+  .related-posts li a:hover {
+    color: $color_potters_clay_approx;
+  }
+}
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  //Instead of the line below you could use @include word-break($value)
+  word-break: normal;
+  //Instead of the line below you could use @include word-break($value)
+  word-break: keep-all;
+  margin-top: 0;
+  margin-bottom: 16px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  tr {
+    background-color: $$white;
+    border-top: 1px solid $color_celeste_approx;
+    &:nth-child(2n) {
+      background-color: $color_desert_storm_approx;
+    }
+  }
+  th {
+    @extend %extend_3;
+  }
+  td {
+    @extend %extend_3;
+  }
+}
+.open-source__sass {
+  @extend %extend_4;
+  background-position: 0 0;
+  width: 96px;
+  height: 72px;
+  &:not(:last-child) {
+    margin-right: 20px;
+    margin-right: 1.25rem;
+  }
+}
+.open-source__node {
+  @extend %extend_4;
+  background-position: -100px 0;
+  width: 186px;
+  height: 50px;
+  &:not(:last-child) {
+    margin-right: 20px;
+    margin-right: 1.25rem;
+  }
+}
+.open-source__gulp {
+  @extend %extend_4;
+  background-position: -291px 0;
+  width: 51px;
+  height: 116px;
+  &:not(:last-child) {
+    margin-right: 20px;
+    margin-right: 1.25rem;
+  }
+}
+.open-source__handlebars {
+  @extend %extend_4;
+  background-position: -100px -54px;
+  width: 170px;
+  height: 68px;
+  &:not(:last-child) {
+    margin-right: 20px;
+    margin-right: 1.25rem;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), not all, not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){
+  .open-source__sass, .open-source__node, .open-source__gulp, .open-source__handlebars {
+    background-image: url('../images/open-source-logos@2x.png');
+    background-size: 342px 121px;
+  }
+}
+
+.is-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  opacity: 0;
+}

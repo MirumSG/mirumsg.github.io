@@ -2,6 +2,7 @@ title:        XM Front-End Development Framework and Guidelines
 tagline:      'XM Front-End Development Framework and Guidelines'
 description:  'XM Front-End Development frameworks and guidelines'
 url:          http://xm-richmedia.github.io
+baseurl:      /
 version:      0.0.1
 author:
   name:       'xm-richmedia'
