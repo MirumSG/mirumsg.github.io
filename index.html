@@ -1,62 +1,42 @@
 ---
 layout: default
+title: Home
 ---
-<h1>XM Front-End Development frameworks and guidelines</h1>
-<p>XM Front End CSS/SCSS, Javascript guideline and static site generator.</p>
-<br/>
-<br/>
-<br/>
-  <h2>Guidelines:</h2>
+
 <div class="posts">
   <ol>
     <div class="post">
-    {% for post in paginator.posts %}
-        <li>
-          <h4>
-            <a href="{{ post.url }}">
-              {{ post.title }}
-            </a>
-          </h4>
-          <span class="post-date small">{{ post.date | date_to_string }}</span>
-        </li>
+      {% for post in paginator.posts %}
+      <li>
+        <h4>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h4>
+        <span class="post-date small">{{ post.date | date_to_string }}</span>
+      </li>
       <!--<span class="post-date">{{ post.date | date_to_string }}</span>
 
       {{ post.content }}-->
 
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>
   </ol>
 </div>
 
-
-
-<!-- Pagination links -->
 <div class="pagination">
   {% if paginator.next_page %}
-  <a href="/page{{paginator.next_page}}" class="older">Older</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
   {% else %}
-  <span class="next">Older</span>
+    <span class="pagination-item older">Older</span>
   {% endif %}
   {% if paginator.previous_page %}
-  {% if paginator.page == 2 %}
-  <a href="/" class="newer">Newer</a>
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
   {% else %}
-  <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
-  {% endif %}
-  {% else %}
-  <span class="previous">Newer</span>
+    <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
-
-
-<section>
-  <h4>built with:</h4>
-  <div id="opensource-logo">
-    <p>
-      <a class="open-source__sass" href="http://sass-lang.com" title="Visit the Sass homepage"><span class="is-hidden">Sass</span></a>
-      <a class="open-source__node" href="http://nodejs.org" title="Visit the NodeJS homepage"><span class="is-hidden">NodeJS</span></a>
-      <a class="open-source__gulp" href="http://gulpjs.com" title="Visit the Gulp homepage"><span class="is-hidden">Gulp</span></a>
-      <a class="open-source__handlebars" href="http://handlebarsjs.com" title="Visit the HandlebarsJS homepage"><span class="is-hidden">Handlebars</span></a>
-    </p>
-  </div>
-</section>

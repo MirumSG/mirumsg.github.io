@@ -42,10 +42,10 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 gulp.task('sass', function () {
     gulp.src('_scss/main.scss')
         .pipe(sass({
-            includePaths: ['scss'],
-            onError: browserSync.notify
+          includePaths: ['scss'],
+          onError: browserSync.notify
         }))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        //.pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('_site/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('css'));
