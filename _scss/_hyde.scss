@@ -57,7 +57,10 @@ html {
   text-align: center;
   padding: 2rem 1rem;
   background-color: #202020;
-
+  img{
+    width: 70px;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -67,7 +70,10 @@ html {
     bottom: 0;
     width: 18rem;
     text-align: left;
-
+    img{
+      width: 100px;
+      margin: 0;
+    }
   }
 }
 
@@ -141,7 +147,7 @@ html {
 
   @media (min-width: 48em) {
     .content {
-      max-width: 38rem;
+      max-width: 100%;
       margin-left: 20rem;
       margin-right: 2rem;
     }

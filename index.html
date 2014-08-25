@@ -2,8 +2,10 @@
 layout: default
 title: Home
 ---
-
+<h1>XM Front-End Development Framework and Guidelines</h1>
+<hr/>
 <div class="posts">
+  Guidelines:
   <ol>
     <div class="post">
       {% for post in paginator.posts %}
@@ -15,15 +17,11 @@ title: Home
         </h4>
         <span class="post-date small">{{ post.date | date_to_string }}</span>
       </li>
-      <!--<span class="post-date">{{ post.date | date_to_string }}</span>
-
-      {{ post.content }}-->
-
       {% endfor %}
     </div>
   </ol>
 </div>
-
+<!--
 <div class="pagination">
   {% if paginator.next_page %}
     <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
@@ -39,7 +37,7 @@ title: Home
   {% else %}
     <span class="pagination-item newer">Newer</span>
   {% endif %}
-</div>
+</div>-->
 
 <section>
   <h4>built with:</h4>

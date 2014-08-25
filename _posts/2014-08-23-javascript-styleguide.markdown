@@ -19,7 +19,7 @@ categories: js javascript
 ## Objects
 * Use the literal syntax for object creation.
 
-```
+```js
 // bad
 var item = new Object();
 

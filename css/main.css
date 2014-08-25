@@ -104,11 +104,12 @@ abbr[title] {
 
 code {
   font-family: Menlo, Monaco, Courier New, monospace;
-  padding: 0.25em 0.5em;
+  padding: 0.05em 0.5em;
   font-size: 85%;
   color: #bf616a;
   background-color: #f9f9f9;
-  border-radius: 3px; }
+  border-radius: 3px;
+  border: 1px solid #ccc; }
 
 pre {
   font-family: Menlo, Monaco, Courier New, monospace;
@@ -122,10 +123,13 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9; }
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px; }
   pre code {
     padding: 0;
-    font-size: 100%;
+    border: none;
+    font-size: 13px;
     color: inherit;
     background-color: transparent; }
 
@@ -249,6 +253,8 @@ th {
   margin-top: -0.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a; }
+  .post-date.small {
+    font-size: 12px; }
 
 .related {
   padding-top: 2rem;
@@ -471,6 +477,9 @@ html {
   text-align: center;
   padding: 2rem 1rem;
   background-color: #202020; }
+  .sidebar img {
+    width: 70px;
+    margin: 0 auto; }
 
 @media (min-width: 48em) {
   .sidebar {
@@ -479,7 +488,10 @@ html {
     left: 0;
     bottom: 0;
     width: 18rem;
-    text-align: left; } }
+    text-align: left; }
+    .sidebar img {
+      width: 100px;
+      margin: 0; } }
 
 /* Sidebar links */
 .sidebar a {
@@ -538,7 +550,7 @@ a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .content {
-    max-width: 38rem;
+    max-width: 100%;
     margin-left: 20rem;
     margin-right: 2rem; } }
 
