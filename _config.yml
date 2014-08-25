@@ -1,12 +1,25 @@
-title:        XM Front-End Development Framework and Guidelines
-tagline:      'XM Front-End Development Framework and Guidelines'
-description:  'XM Front-End Development frameworks and guidelines'
-url:          http://xm-richmedia.github.io
-version:      0.0.1
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:    	  /guides/:title
+
+# Setup
+title:            XM Front-End Development Framework and Guidelines
+tagline:          'XM Front-End Development Framework and Guidelines'
+description:      'XM Front-End Development frameworks and guidelines'
+url:              http://xm-richmedia.github.io
+baseurl:          /
+
 author:
-  name:       'xm-richmedia'
-  email:      'xm.richmedia@gmail.com'
-markdown:     rdiscount
-permalink:    /guides/:title
-pygments:     true
-paginate:     5
+name:             'xm-richmedia'
+url:              http://xm-richmedia.github.io
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/XM-RichMedia
