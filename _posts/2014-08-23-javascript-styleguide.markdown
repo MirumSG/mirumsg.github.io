@@ -31,7 +31,7 @@ var item = {};
 ## Arrays
 * Use the literal syntax for array creation.
 
-```
+```js
 // bad
 var items = new Array();
 
