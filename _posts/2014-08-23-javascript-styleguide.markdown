@@ -31,7 +31,7 @@ var item = {};
 ## Arrays
 * Use the literal syntax for array creation.
 
-```
+```js
 // bad
 var items = new Array();
 
@@ -40,7 +40,7 @@ var items = [];
 ```
 * If you don't know array length use Array#push.
 
-```
+```js
 var someStack = [];
 
 // bad
@@ -51,7 +51,7 @@ someStack.push('abracadabra');
 ```
 * Use single quotes `''` for strings.
 
-```
+```js
 // bad
 var name = "Bob Parr";
 
@@ -66,7 +66,7 @@ var fullName = 'Bob ' + this.lastName;
 ```
 * Strings longer than 80 characters should be written across multiple lines using string concatenation.
 
-```
+```js
 // bad
 var errorMessage = 'This is a super long error that was thrown because of Batman. When you stop to think about how Batman had anything to do with this, you would get nowhere fast.';
 
@@ -86,7 +86,7 @@ var errorMessage = 'This is a super long error that was thrown because ' +
 * Function expressions:
 
 
-```
+```js
 // anonymous function expression
 var anonymous = function() {
   return true;
@@ -106,7 +106,7 @@ var named = function named() {
 ## Variables
 * Always use var to declare variables. Not doing so will result in global variables. We want to avoid polluting the global namespace.
 
-```
+```js
 // bad
 superPower = new SuperPower();
 
@@ -115,7 +115,7 @@ var superPower = new SuperPower();
 ```
 * Use one `var` declaration for multiple variables and declare each variable on a newline.
 
-```
+```js
 // bad
 var items = getItems();
 var goSportsTeam = true;
@@ -128,7 +128,7 @@ var items = getItems(),
 ```
 * Declare unassigned variables last. This is helpful when later on you might need to assign a variable depending on one of the previous assigned variables.
 
-```
+```js
 // bad
 var i, len, dragonball,
     items = getItems(),
@@ -149,7 +149,7 @@ var items = getItems(),
 ```
 * Assign variables at the top of their scope. This helps avoid issues with variable declaration and assignment hoisting related issues.
 
-```
+```js
 // bad
 function() {
   test();
@@ -193,7 +193,7 @@ function() {
     * __Numbers__ evaluate to false if __+0, -0, or NaN__, otherwise __true__
     * __Strings__ evaluate to false if an empty string `''`, otherwise __true__
 
-```
+```js
 // bad
 if (name !== '') {
   // ...stuff...
@@ -217,7 +217,7 @@ if (collection.length) {
 ## Blocks
 * Use braces with all multi-line blocks.
 
-```
+```js
 // bad
 if (test)
   return false;
@@ -243,7 +243,7 @@ function() {
 
 * Use `/** ... */` for multiline comments. Include a description, specify types and values for all parameters and return values.
 
-```
+```js
 // bad
 // make() returns a new element
 // based on the passed in tag name
@@ -275,7 +275,7 @@ function make(tag) {
 
 * Use `//` for single line comments. Place single line comments on a newline above the subject of the comment. Put an empty line before the comment.
 
-```
+```js
 // bad
 var active = true;  // is current tab
 
@@ -306,7 +306,7 @@ function getType() {
 * Prefixing your comments with FIXME or TODO helps other developers quickly understand if you're pointing out a problem that needs to be revisited, or if you're suggesting a solution to the problem that needs to be implemented. These are different than regular comments because they are actionable. The actions are
 `FIXME -- need to figure this out` or `TODO -- need to implement`.
 
-```
+```js
 function Calculator() {
 
   // FIXME: shouldn't use a global here
@@ -326,7 +326,7 @@ function Calculator() {
 ## Whitespace
 * Use soft tabs set to 2 spaces
 
-```
+```js
 // bad
 function() {
 ∙∙∙∙var name;
@@ -344,7 +344,7 @@ function() {
 ```
 * Place 1 space before the leading brace.
 
-```
+```js
 // bad
 function test(){
   console.log('test');
@@ -369,7 +369,7 @@ dog.set('attr', {
 ```
 * Use indentation when making long method chains.
 
-```
+```js
 // bad
 $('#items').find('.selected').highlight().end().find('.open').updateCount();
 
@@ -383,7 +383,7 @@ $('#items')
 ```
 ## Semicolons
 
-```
+```js
 // bad
 (function() {
   var name = 'Skywalker'
@@ -405,7 +405,7 @@ $('#items')
 ## Naming Conventions
 * Avoid single letter names. Be descriptive with your naming.
 
-```
+```js
 // bad
 function q() {
   // ...stuff...
@@ -418,7 +418,7 @@ function query() {
 ```
 * Use camelCase when naming objects, functions, and instances
 
-```
+```js
 // bad
 var OBJEcttsssss = {};
 var this_is_my_object = {};
@@ -436,7 +436,7 @@ var user = new User({
 ```
 * Use a leading underscore _ when naming private properties
 
-```
+```js
 // bad
 this.__firstName__ = 'Panda';
 this.firstName_ = 'Panda';
@@ -446,7 +446,7 @@ this._firstName = 'Panda';
 ```
 * When saving a reference to `this` use `_this`.
 
-```
+```js
 // bad
 function() {
   var self = this;
@@ -475,7 +475,7 @@ function() {
 ##JSHint
 * All Javascript will be validate using JSHint with the following settings:
 
-```
+```js
 {
   "node": true,
   "browser": true,
