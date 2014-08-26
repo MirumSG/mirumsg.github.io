@@ -7,8 +7,6 @@ categories: gulp javascript node.js handlebars scss
 
 This static site generator is built with [Gulp.js](http://gulpjs.com/) running on top of [Node.js](http://nodejs.org/).
 
-## Gulp
-
 <img src="https://raw2.github.com/gulpjs/artwork/master/gulp-2x.png" width="80"><img src="http://saptarshichakraborty.me/blog3571/wp-content/uploads/2013/07/Nodejs_logo_light.png" width=200">
 Gulp.js is what we call a JavaScript Task Runner. It helps you automate repetitive tasks such as minification, compilation, unit testing, linting, etc.
 
@@ -64,7 +62,7 @@ Why use BrowserSync?
 
 When you’re making responsive websites, there’s a lot of tweaking and testing to do. BrowserSync makes your workflow faster by synchronising URLs, interactions and code changes across multiple devices. It’s wicked-fast and totally free.
 
-Read here for more information: <http://www.browsersync.io/>
+Read here for more information:<br/><http://www.browsersync.io/>
 
 ---
 
@@ -138,8 +136,7 @@ gem install scss-lint
 ---
 
 ## JSHint
-JSHint is a program that flags suspicious usage in programs written in JavaScript.
-
+JSHint is a program that flags suspicious usage in programs written in JavaScript.<br/>
 <http://www.jshint.com/docs/>
 
 ### JSHint settings:
@@ -206,7 +203,7 @@ This is how the default page would look like when using the page_footer partial 
 
 ## Image Optimization
 
-Minify PNG, JPEG, GIF and SVG images with imagemin
+Minify PNG, JPEG, GIF and SVG images with imagemin<br/>
 <https://github.com/sindresorhus/gulp-imagemin>
 
 All PNG, JPEG, GIF and SVG assets will be optimise with this plugins to reduce the file sizes.
@@ -217,6 +214,24 @@ All PNG, JPEG, GIF and SVG assets will be optimise with this plugins to reduce t
 
 With the help of Autoprefixer you will never have to write a single prefix again. Ever!
 Generator functions are also a thing of the past. Start writing real CSS3.
+
+changing from this:
+
+```css
+a {
+  transition: transform 1s
+}
+```
+
+to this:
+
+```css
+a {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -ms-transform 1s;
+  transition: transform 1s
+}
+```
 
 <https://github.com/metrime/gulp-autoprefixer>
 
@@ -270,12 +285,10 @@ trim_trailing_whitespace = false
 
 [Download plugin for your editor](http://editorconfig.org/#download)
 
----
-
 ***
 
 <section>
-  <h4>built with:</h4>
+  <h4>Built with these open source technologies:</h4>
   <div id="opensource-logo">
     <p>
       <a class="open-source__sass" href="http://sass-lang.com" title="Visit the Sass homepage"><span class="is-hidden">Sass</span></a>
