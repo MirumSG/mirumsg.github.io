@@ -75,7 +75,8 @@ Reference: [Jonathan Snook’s SMACSS](http://smacss.com/book/categorizing)
 Reference from: [Idiomatic-css](https://github.com/necolas/idiomatic-css)
 
 ####3.1 - Use one discrete selector per line in multi-selector rulesets.
-<pre><code>/*  --- Correct --- */
+```css
+/*  --- Correct --- */
 .selector-day:hover,
 .selector-month:hover,
 .selector-fullyear:hover,
@@ -87,7 +88,7 @@ Reference from: [Idiomatic-css](https://github.com/necolas/idiomatic-css)
 .selector-day:hover, .selector-month:hover, .selector-fullyear:hover, .selector-year:hover{
     color: #7EA0E2;
 }
-</code></pre>
+```
 
 ####3.2 - Include a single space before the opening brace of a ruleset.
 <pre><code>/*  --- Correct --- */
