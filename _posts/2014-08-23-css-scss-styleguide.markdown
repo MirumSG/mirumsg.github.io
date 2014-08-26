@@ -91,7 +91,8 @@ Reference from: [Idiomatic-css](https://github.com/necolas/idiomatic-css)
 ```
 
 ####3.2 - Include a single space before the opening brace of a ruleset.
-<pre><code>/*  --- Correct --- */
+```css
+/*  --- Correct --- */
 div.selector {
     margin: 10px 0 30px;
 }
@@ -100,10 +101,11 @@ div.selector {
 div.selector{
     margin: 10px 0 30px;
 }
-</code></pre>
+```
 
 ####3.3 - Include one declaration per line in a declaration block.
-<pre><code>/* --- Correct --- */
+```css
+/* --- Correct --- */
 div.selector {
     clear: both;
     padding: 20px;
@@ -115,10 +117,11 @@ div.selector {
 div.selector {
     clear: both; padding: 20px; margin: 0 0 10px; text-align: left;
 }
-</code></pre>
+```
 
 ####3.4 - Include a single space after the colon of a declaration.
-<pre><code>/*  --- Correct --- */
+```css
+/*  --- Correct --- */
 .selector {
     display: block;
     margin-top: 15px;
@@ -129,10 +132,11 @@ div.selector {
     display:block;
     margin-top:15px;
 }
-</code></pre>
+```
 
 ####3.5 - Use lowercase and shorthand hex values, e.g., #aaa.
-<pre><code>/*  --- Correct --- */
+```css
+/*  --- Correct --- */
 .selector {
     color: #ddd;
     margin: 1em 0 2em 1em;
@@ -150,25 +154,25 @@ div.selector {
 .selector {
     color: #DDDDDD;
 }
-
-</code></pre>
+```
 
 ####3.6 - Use single or double quotes consistently. Preference is for double quotes, e.g., content: "".
-<pre><code>.selector {
+```css.selector {
     content: "\e008";
 }
-</code></pre>
+```
 
 ####3.7 - Quote attribute values in selectors, e.g., input[type="checkbox"].
-<pre><code>.selector[type="text"]{
+```css.selector[type="text"]{
     border: 1px solid $pp-border-color;
     background-color: $pp-textfield-bg;
     color: $pp-text-color;
 }
-</code></pre>
+```
 
 ####3.8 - Where allowed, avoid specifying units for zero-values, e.g., margin: 0.
-<pre><code>/*  --- Correct --- */
+```css
+/*  --- Correct --- */
 .selector {
     display: block;
     margin-bottom: 0;
@@ -181,7 +185,7 @@ div.selector {
     margin-bottom: 0px;
     padding: 0px;
 }
-</code></pre>
+```
 
 ####3.9 - Include a space after each comma in comma-separated property or function values.
 ####3.10 - Include a semi-colon at the end of the last declaration in a declaration block.
@@ -202,7 +206,8 @@ Everytime when you need to place a number, consider if it can be avoided or cont
 "Every hard-coded measurement you set is a commitment you might not necessarily want to keep."
 
 ####3.14 - 4 space tab indented ( configure in your IDE )
-<pre><code>/*  --- Correct --- */
+```css
+/*  --- Correct --- */
 .bx-selector {
     left: 10px;
     @include spritebg($common-sprite-sheet, 30px, 29px, 0px, -1091px);
@@ -213,19 +218,21 @@ Everytime when you need to place a number, consider if it can be avoided or cont
     left: 10px
     @include spritebg($common-sprite-sheet,30px,29px,0px,-1091px)
     }
-</code></pre>
+```
 
 ####3.15 - Large blocks of single declarations can use a slightly different, single-line format.
 In this case, a space should be included after the opening brace and before the closing brace.
-<pre><code>/*  --- Example --- */
+```css
+/*  --- Example --- */
 .selector-1 { width: 10%; }
 .selector-2 { width: 20%; }
 .selector-3 { width: 30%; }
-</code></pre>
+```
 
 ####3.16 - Long, comma-separated property values - such as collections of gradients or shadows
 Can be arranged across multiple lines in an effort to improve readability and produce more useful diffs.
-<pre><code>/*  --- Example --- */
+```css
+/*  --- Example --- */
 .selector {
     background:
         url('select2-spinner.gif') no-repeat 100%,
@@ -240,7 +247,7 @@ Can be arranged across multiple lines in an effort to improve readability and pr
         1px 1px 1px #000,
         2px 2px 1px 1px #ccc inset;
 }
-</code></pre>
+```
 
 ####3.17 - OOCSS
 When building a new component write markup before CSS.
@@ -251,20 +258,22 @@ By writing markup first you can focus on data, content and semantics and then ap
 #####3.17.1 - Separate structure and skin
 This means to define repeating visual features (like background and border styles)
 as separate “skins” that you can mix-and-match with your various objects to achieve a large amount of visual variety without much code.
-<pre><code>/*  --- Example --- */
+```css
+/*  --- Example --- */
 .room {}
 
 .room--kitchen {}
 .room--bedroom {}
 .room--bathroom {}
-</code></pre>
+```
 
 #####3.17.2 - Separate container and content
 Essentially, this means “rarely use location-dependent styles”.
 An object should look the same no matter where you put it.
 So instead of styling a specific `<h2>` with .myObject h2 {...}, create and apply a class that describes the `<h2>` in question, like `<h2 class="category">`.
 
-<pre><code>/*  --- Correct --- */
+```css
+/*  --- Correct --- */
 .category{
     font-weight: bold;
 }
@@ -273,11 +282,12 @@ So instead of styling a specific `<h2>` with .myObject h2 {...}, create and appl
 .selector h2.category{
     font-weight: bold;
 }
-</code></pre>
+```
 
 ####3.18 - For large stylesheet, leave five (5) carriage returns between each section
 This large chunk of whitespace is quickly noticeable when scrolling quickly through larger files.
-<pre><code>/*  -----------------------------------------------------
+```css
+/*  -----------------------------------------------------
     $RESET
     -----------------------------------------------------   */
     .selector{
@@ -296,18 +306,19 @@ This large chunk of whitespace is quickly noticeable when scrolling quickly thro
 
 
 
-</code></pre>
+```
 
 #####Other options:
 Some uses 3 carriage returns instead.
 Some uses the "START" & "END" comments:
 
-<pre><code>/*  ----- Content Styles - START -----  */
+```css
+/*  ----- Content Styles - START -----  */
     .selector{
         some styles
     }
 /*  ----- Content Styles - END -----  */
-</code></pre>
+```
 
 ####3.19 - Using Classes instead of IDs.
 Not implying that do not use CSS IDs at all, rather use them wisely.
@@ -337,7 +348,8 @@ I've break Typography out as one group. [Reference link](https://github.com/neco
 ####4.2 - Where possible, group @include statements at the top of a declaration block, after any @extend statements.
 ####4.3 - Limit nesting to 1 level deep. Reassess any nesting more than 2 levels deep. This prevents overly-specific CSS selectors.
 ####4.4 - Avoid large numbers of nested rules. Break them up when readability starts to be affected. Preference to avoid nesting that spreads over more than 20 lines.
-<pre><code>.other-rule{}
+```css
+.other-rule{}
 .selector {
     /* --- @extend & @include statements always on top --- */
     @extend .other-rule;
@@ -372,7 +384,7 @@ I've break Typography out as one group. [Reference link](https://github.com/neco
     background: #000;
     cursor: default;
 }
-</code></pre>
+```
 
 
 
@@ -390,7 +402,8 @@ Sass mixins should use camelCase for their names, e.g: borderRadiusIdentical
     Objects are small little chunks of functionality. You can think of them as interface elements like headers, footers, buttons, and content areas.
 
 ####5.2 - Parent-Child relationships
-<pre><code>/*  --- Example --- */
+```css
+/*  --- Example --- */
 // Posts
 .post {
     margin: 2em 0;
@@ -400,11 +413,12 @@ Sass mixins should use camelCase for their names, e.g: borderRadiusIdentical
     font-size: 2em;
     font-weight: normal;
 }
-</code></pre>
+```
 
 ####5.3 - Another pattern - Plural Parent Pattern
 It's especially handy for a set of objects and their container.
-<pre><code>/*  --- Example --- */
+```css
+/*  --- Example --- */
 .tabs {
     border-bottom: 1px solid silver;
     text-align: center;
@@ -421,11 +435,12 @@ It's especially handy for a set of objects and their container.
     position: relative;
     top: 1px;
 }
-</code></pre>
+```
 
 ####5.4 - Subclassing objects
 Most object-oriented systems have another concept for declaring that an object is a kind of another object.
-<pre><code>/*  --- Example --- */
+```css
+/*  --- Example --- */
 .button {
     background: linear-gradient(#eee, #ddd);
     border: 1px solid #999;
@@ -443,24 +458,26 @@ Most object-oriented systems have another concept for declaring that an object i
 .dropdown-button {
     &::after { content: " \25BE"; }
 }
-</code></pre>
+```
 
 HTML codes:
 `<button class="button dropdown-button">Dropdown</button>`
 
 
 #####5.4.1 - If you prefer to only use one class in your markup, you can use the Sass @extend directive, as shown in the example below:
-<pre><code>/*  --- Example --- */
+```css
+/*  --- Example --- */
 .dropdown-button {
     @extend .button;
     &::after { content: " \25BE"; }
 }
-</code></pre>
+```
 
 
 ####5.5 - Using modifiers
 A modifier can be used to indicate that the object is in a certain state or to make small modifications on existing behavior.
-<pre><code>/*  --- Example --- */
+```css
+/*  --- Example --- */
 .tab {
     background: #e5e5e5;
     border: 1px solid silver;
@@ -491,11 +508,12 @@ A modifier can be used to indicate that the object is in a certain state or to m
     &.large { font-size: 18px; }
     &.small { font-size: 11px; padding: 1px 2px; }
 }
-</code></pre>
+```
 
 #####5.5.1 - global modifier (Similar to helper Class)
 There are times when it makes perfect sense to make a modifer a global modifier. Here are a couple of examples:
-<pre><code>/*  --- Example --- */
+```css
+/*  --- Example --- */
 .clearfix { @include clearfix; }
 
 .is-hidden    { display:    none !important; }
@@ -516,15 +534,15 @@ There are times when it makes perfect sense to make a modifer a global modifier.
 .mt1 { margin-top:    1em !important; }
 .mb0 { margin-bottom: 0   !important; }
 .mb1 { margin-bottom: 1em !important; }
-</code></pre>
+```
 
 ####5.6 - JS hooks
 If you need to bind to some markup use a JS specific CSS class. This is simply a class namespaced with .js-, e.g. .js-toggle, .js-drag-and-drop.
 Makes it easier to debug and identify JS issues as well.
 
-HTML codes:
-`<th class="is-sortable  js-is-sortable"></th>`
-
+```html
+<th class="is-sortable  js-is-sortable"></th>
+```
 
 ####5.7 - Quasi-qualified selectors
 
@@ -539,12 +557,13 @@ this class sounds as though it would be used on a high-level container, perhaps 
 but with .product-page alone it is impossible to tell.
 
 By quasi-qualifying this selector (i.e. commenting out the leading type selector) we can communicate where we wish to have this class applied, thus:
-<pre><code>/*  --- Example --- */
+```css
+/*  --- Example --- */
 /*html*/.product-page {}
 /*ol*/.breadcrumb {}
 /*p*/.intro {}
 /*ul*/.image-thumbs {}
-</code></pre>
+```
 
 ###Other notes:
 ----
