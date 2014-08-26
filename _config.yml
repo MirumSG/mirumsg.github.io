@@ -4,7 +4,8 @@ markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
-pygments:         true
+highlighter:      pygments
+#pygments:         true
 lsi:              false
 
 # Permalinks
@@ -28,3 +29,5 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/XM-RichMedia
+
+exclude: ['sass', 'node_modules', 'gulpfile.js', 'package.json', 'README.md', 'LICENSE.md']
