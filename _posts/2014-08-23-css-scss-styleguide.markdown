@@ -7,6 +7,8 @@ categories: css scss
 
 ---
 
+TEST
+
 #####--------------------- NOTE: IE Browsers limitations ---------------------
 * IE 6 - 9 - 4096 rule limit: 4096 selectors limit per CSS file
 * IE 6 - 9 browsers may @import up to 31 CSS files
