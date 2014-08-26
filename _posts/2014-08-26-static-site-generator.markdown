@@ -43,7 +43,6 @@ $ gulp
 
 ## Task integrated into the generator:
 
-* [Gulp](#gulp)
 * [BrowserSync](#browsersync)
 * [SASS](#sass)
 * [SCSS Linting](#scss-linting)
