@@ -75,7 +75,7 @@ Reference: [Jonathan Snook’s SMACSS](http://smacss.com/book/categorizing)
 Reference from: [Idiomatic-css](https://github.com/necolas/idiomatic-css)
 
 ####3.1 - Use one discrete selector per line in multi-selector rulesets.
-```css
+```css+smarty
 /*  --- Correct --- */
 .selector-day:hover,
 .selector-month:hover,
