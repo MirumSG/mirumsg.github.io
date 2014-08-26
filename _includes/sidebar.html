@@ -13,7 +13,7 @@
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
       <ul>
         <div class="post">
-          {% for post in paginator.posts %}
+          {% for post in site.posts %}
           <li>
             <a class="sidebar-nav-item" href="{{ post.url }}">{{ post.title }}</a>
           </li>
@@ -22,7 +22,7 @@
       </ul>
 
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+      <!--<span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
     </nav>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
