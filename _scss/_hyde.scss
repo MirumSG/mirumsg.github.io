@@ -277,6 +277,14 @@ html {
     color: #ff9600;
   }
 
+.theme-base-xm {
+  .related{
+    h2{
+      font-size: 14px;
+    }
+  }
+}
+
 .open-source__sass, .open-source__node, .open-source__gulp, .open-source__handlebars {
   display: inline-block;
   background: url('../images/open-source-logos.png') no-repeat;
