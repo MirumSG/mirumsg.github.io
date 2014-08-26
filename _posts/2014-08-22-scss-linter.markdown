@@ -2,7 +2,7 @@
 layout: post
 title:  "SCSS Linter Document"
 date:   2014-08-22 16:36:22
-categories: scss
+categories: css scss
 ---
 
 # Linters

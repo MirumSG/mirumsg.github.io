@@ -12,9 +12,9 @@ lsi:              false
 permalink:    	   /guides/:title
 
 # Setup
-title:            XM Front-End Development Framework and Guidelines
-tagline:          'XM Front-End Development Framework and Guidelines'
-description:      'XM Front-End Development frameworks and guidelines'
+title:            XM Front-End Development Guidelines and Documentations
+tagline:          'XM Front-End Development Guidelines and Documentations'
+description:      'XM Front-End Development Guidelines and Documentations'
 url:              http://xm-richmedia.github.io
 baseurl:          /
 
