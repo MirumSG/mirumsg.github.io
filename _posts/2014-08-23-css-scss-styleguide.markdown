@@ -46,7 +46,8 @@ This is a subjective point, good for bigger projects.
 
 The **\$** prefixing the name of the section allows us to run a find **([Cmd|Ctrl]+F)** for **$[SECTION-NAME]** and limit our search scope to section titles only.
 
-<pre><code>/*  -----------------------------------------------------
+```
+/*  -----------------------------------------------------
     $CONTENTS
     -----------------------------------------------------   */
 /**
@@ -56,10 +57,11 @@ The **\$** prefixing the name of the section allows us to run a find **([Cmd|Ctr
     * Layout ............................................
     * Theme .............................................
 */
-</code></pre>
+```
 
 ##2 - CSS Files Source Order
 ----
+
 1. Base / Reset – ground zero. They are almost exclusively single element selectors but it could include attribute selectors, pseudo-class selectors, child selectors or sibling selectors.
 2. Layout – divide the page into sections. Layouts hold one or more modules together..
 3. Module — the reusable, modular parts of our design. They are the callouts, the sidebar sections, the product lists and so on.
@@ -75,8 +77,9 @@ Reference: [Jonathan Snook’s SMACSS](http://smacss.com/book/categorizing)
 Reference from: [Idiomatic-css](https://github.com/necolas/idiomatic-css)
 
 ####3.1 - Use one discrete selector per line in multi-selector rulesets.
-```css+smarty
-/*  --- Correct --- */
+
+```css
+  /*  --- Correct --- */
 .selector-day:hover,
 .selector-month:hover,
 .selector-fullyear:hover,
@@ -88,9 +91,11 @@ Reference from: [Idiomatic-css](https://github.com/necolas/idiomatic-css)
 .selector-day:hover, .selector-month:hover, .selector-fullyear:hover, .selector-year:hover{
     color: #7EA0E2;
 }
+
 ```
 
 ####3.2 - Include a single space before the opening brace of a ruleset.
+
 ```css
 /*  --- Correct --- */
 div.selector {
@@ -104,6 +109,7 @@ div.selector{
 ```
 
 ####3.3 - Include one declaration per line in a declaration block.
+
 ```css
 /* --- Correct --- */
 div.selector {
@@ -120,6 +126,7 @@ div.selector {
 ```
 
 ####3.4 - Include a single space after the colon of a declaration.
+
 ```css
 /*  --- Correct --- */
 .selector {
@@ -135,6 +142,7 @@ div.selector {
 ```
 
 ####3.5 - Use lowercase and shorthand hex values, e.g., #aaa.
+
 ```css
 /*  --- Correct --- */
 .selector {
@@ -155,15 +163,18 @@ div.selector {
     color: #DDDDDD;
 }
 ```
-
 ####3.6 - Use single or double quotes consistently. Preference is for double quotes, e.g., content: "".
-```css.selector {
+
+```css
+.selector {
     content: "\e008";
 }
 ```
 
 ####3.7 - Quote attribute values in selectors, e.g., input[type="checkbox"].
-```css.selector[type="text"]{
+
+```css
+.selector[type="text"]{
     border: 1px solid $pp-border-color;
     background-color: $pp-textfield-bg;
     color: $pp-text-color;
@@ -171,6 +182,7 @@ div.selector {
 ```
 
 ####3.8 - Where allowed, avoid specifying units for zero-values, e.g., margin: 0.
+
 ```css
 /*  --- Correct --- */
 .selector {
@@ -186,26 +198,26 @@ div.selector {
     padding: 0px;
 }
 ```
-
 ####3.9 - Include a space after each comma in comma-separated property or function values.
 ####3.10 - Include a semi-colon at the end of the last declaration in a declaration block.
 ####3.11 - Place the closing brace of a ruleset in the same column as the first character of the ruleset.
 ####3.12 - Separate each ruleset by a blank line.
 ####3.13 - Magic numbers and absolutes
+
 A magic number is a number which is used because it works to fix or align your styles to what you need.
 These are bad, especially for responsive or fiuld layout, where they tend to fix symptoms but not problems. (Especially for IE browsers )
 
-<pre>
-For example, using .dropdown-nav li:hover ul { top: 37px; } to move a dropdown to the bottom of the nav on hover is bad, as 37px is a magic number. 37px only works here because in this particular scenario the .dropdown-nav happens to be 37px tall.
+For example, using `.dropdown-nav li:hover ul { top: 37px; }` to move a dropdown to the bottom of the nav on hover is bad, as `37px` is a magic number. `37px` only works here because in this particular scenario the `.dropdown-nav` happens to be `37px` tall.
 
-Instead you should use .dropdown-nav li:hover ul { top: 100%; } which means no matter how tall the .dropdown-nav gets, the dropdown will always sit 100% from the top.
-</pre>
+Instead you should use `.dropdown-nav li:hover ul { top: 100%; }` which means no matter how tall the .dropdown-nav gets, the dropdown will always sit `100%` from the top.
+
 
 Everytime when you need to place a number, consider if it can be avoided or controlled by other elements instead of using a magic number.
 
 "Every hard-coded measurement you set is a commitment you might not necessarily want to keep."
 
 ####3.14 - 4 space tab indented ( configure in your IDE )
+
 ```css
 /*  --- Correct --- */
 .bx-selector {
@@ -222,6 +234,7 @@ Everytime when you need to place a number, consider if it can be avoided or cont
 
 ####3.15 - Large blocks of single declarations can use a slightly different, single-line format.
 In this case, a space should be included after the opening brace and before the closing brace.
+
 ```css
 /*  --- Example --- */
 .selector-1 { width: 10%; }
@@ -231,6 +244,7 @@ In this case, a space should be included after the opening brace and before the 
 
 ####3.16 - Long, comma-separated property values - such as collections of gradients or shadows
 Can be arranged across multiple lines in an effort to improve readability and produce more useful diffs.
+
 ```css
 /*  --- Example --- */
 .selector {
@@ -258,6 +272,7 @@ By writing markup first you can focus on data, content and semantics and then ap
 #####3.17.1 - Separate structure and skin
 This means to define repeating visual features (like background and border styles)
 as separate “skins” that you can mix-and-match with your various objects to achieve a large amount of visual variety without much code.
+
 ```css
 /*  --- Example --- */
 .room {}
@@ -286,6 +301,7 @@ So instead of styling a specific `<h2>` with .myObject h2 {...}, create and appl
 
 ####3.18 - For large stylesheet, leave five (5) carriage returns between each section
 This large chunk of whitespace is quickly noticeable when scrolling quickly through larger files.
+
 ```css
 /*  -----------------------------------------------------
     $RESET
@@ -301,9 +317,6 @@ This large chunk of whitespace is quickly noticeable when scrolling quickly thro
 /*  -----------------------------------------------------
     $TYPOGRAPHY
     -----------------------------------------------------   */
-
-
-
 
 
 ```
@@ -348,6 +361,7 @@ I've break Typography out as one group. [Reference link](https://github.com/neco
 ####4.2 - Where possible, group @include statements at the top of a declaration block, after any @extend statements.
 ####4.3 - Limit nesting to 1 level deep. Reassess any nesting more than 2 levels deep. This prevents overly-specific CSS selectors.
 ####4.4 - Avoid large numbers of nested rules. Break them up when readability starts to be affected. Preference to avoid nesting that spreads over more than 20 lines.
+
 ```css
 .other-rule{}
 .selector {
@@ -390,6 +404,7 @@ I've break Typography out as one group. [Reference link](https://github.com/neco
 
 ##5 - Naming Rules
 ----
+
 Use lowercase & hyphen delimited class names (Should we use BEM notation, see [here](https://github.com/csswizardry/CSS-Guidelines#naming-conventions))
 Sass mixins should use camelCase for their names, e.g: borderRadiusIdentical
 
@@ -402,6 +417,7 @@ Sass mixins should use camelCase for their names, e.g: borderRadiusIdentical
     Objects are small little chunks of functionality. You can think of them as interface elements like headers, footers, buttons, and content areas.
 
 ####5.2 - Parent-Child relationships
+
 ```css
 /*  --- Example --- */
 // Posts
@@ -417,6 +433,7 @@ Sass mixins should use camelCase for their names, e.g: borderRadiusIdentical
 
 ####5.3 - Another pattern - Plural Parent Pattern
 It's especially handy for a set of objects and their container.
+
 ```css
 /*  --- Example --- */
 .tabs {
@@ -439,6 +456,7 @@ It's especially handy for a set of objects and their container.
 
 ####5.4 - Subclassing objects
 Most object-oriented systems have another concept for declaring that an object is a kind of another object.
+
 ```css
 /*  --- Example --- */
 .button {
@@ -476,7 +494,8 @@ HTML codes:
 
 ####5.5 - Using modifiers
 A modifier can be used to indicate that the object is in a certain state or to make small modifications on existing behavior.
-```css
+
+```scss
 /*  --- Example --- */
 .tab {
     background: #e5e5e5;
@@ -512,6 +531,7 @@ A modifier can be used to indicate that the object is in a certain state or to m
 
 #####5.5.1 - global modifier (Similar to helper Class)
 There are times when it makes perfect sense to make a modifer a global modifier. Here are a couple of examples:
+
 ```css
 /*  --- Example --- */
 .clearfix { @include clearfix; }
@@ -557,6 +577,7 @@ this class sounds as though it would be used on a high-level container, perhaps 
 but with .product-page alone it is impossible to tell.
 
 By quasi-qualifying this selector (i.e. commenting out the leading type selector) we can communicate where we wish to have this class applied, thus:
+
 ```css
 /*  --- Example --- */
 /*html*/.product-page {}
@@ -567,6 +588,7 @@ By quasi-qualifying this selector (i.e. commenting out the leading type selector
 
 ###Other notes:
 ----
+
 Descendant selectors (qualified selectors) are inefficient because, for each element that matches the key, the browser must also traverse up the DOM tree, evaluating every ancestor element until it finds a match or reaches the root element.
 The less specific the key, the greater the number of nodes that need to be evaluated.
 

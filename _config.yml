@@ -1,9 +1,13 @@
 # Dependencies
-markdown:         rdiscount
+#markdown:         rdiscount
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
 pygments:         true
 
 # Permalinks
-permalink:    	  /guides/:title
+permalink:    	   /guides/:title
 
 # Setup
 title:            XM Front-End Development Framework and Guidelines
