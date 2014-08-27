@@ -81,16 +81,16 @@ Reference from: [Idiomatic-css](https://github.com/necolas/idiomatic-css)
 ####3.1 - Use one discrete selector per line in multi-selector rulesets.
 
 ```css
-  /*  --- Correct --- */
+/*  --- Correct --- */
 .selector-day:hover,
 .selector-month:hover,
 .selector-fullyear:hover,
-.selector-year:hover{
+.selector-year:hover {
     color: #7EA0E2;
 }
 
 /*  --- Wrong --- */
-.selector-day:hover, .selector-month:hover, .selector-fullyear:hover, .selector-year:hover{
+.selector-day:hover, .selector-month:hover, .selector-fullyear:hover, .selector-year:hover {
     color: #7EA0E2;
 }
 
@@ -176,10 +176,10 @@ div.selector {
 ####3.7 - Quote attribute values in selectors, e.g., input[type="checkbox"].
 
 ```css
-.selector[type="text"]{
-    border: 1px solid $pp-border-color;
-    background-color: $pp-textfield-bg;
-    color: $pp-text-color;
+.selector[type="text"] {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
 }
 ```
 
@@ -224,13 +224,13 @@ Everytime when you need to place a number, consider if it can be avoided or cont
 /*  --- Correct --- */
 .bx-selector {
     left: 10px;
-    @include spritebg($common-sprite-sheet, 30px, 29px, 0px, -1091px);
+    @include spritebg('../images/bg.png', 30px, 29px, 0px, -1091px);
 }
 
 /*  --- Wrong --- */
 .bx-selector {
     left: 10px
-    @include spritebg($common-sprite-sheet,30px,29px,0px,-1091px)
+    @include spritebg('../images/bg.png',30px,29px,0px,-1091px)
     }
 ```
 
@@ -291,12 +291,12 @@ So instead of styling a specific `<h2>` with .myObject h2 {...}, create and appl
 
 ```css
 /*  --- Correct --- */
-.category{
+.category {
     font-weight: bold;
 }
 
 /*  --- Wrong --- */
-.selector h2.category{
+.selector h2.category {
     font-weight: bold;
 }
 ```
@@ -308,7 +308,7 @@ This large chunk of whitespace is quickly noticeable when scrolling quickly thro
 /*  -----------------------------------------------------
     $RESET
     -----------------------------------------------------   */
-    .selector{
+    .selector {
         some styles
     }
 
@@ -329,7 +329,7 @@ Some uses the "START" & "END" comments:
 
 ```css
 /*  ----- Content Styles - START -----  */
-    .selector{
+    .selector {
         some styles
     }
 /*  ----- Content Styles - END -----  */
@@ -365,7 +365,7 @@ I've break Typography out as one group. [Reference link](https://github.com/neco
 ####4.4 - Avoid large numbers of nested rules. Break them up when readability starts to be affected. Preference to avoid nesting that spreads over more than 20 lines.
 
 ```css
-.other-rule{}
+.other-rule {}
 .selector {
     /* --- @extend & @include statements always on top --- */
     @extend .other-rule;
@@ -473,10 +473,10 @@ Most object-oriented systems have another concept for declaring that an object i
         background: linear-gradient(#fff, #eee);
         color: #111;
     }
-}
 
-.dropdown-button {
-    &::after { content: " \25BE"; }
+    .dropdown-button {
+        &::after { content: " \25BE"; }
+    }
 }
 ```
 
@@ -489,7 +489,9 @@ HTML codes:
 /*  --- Example --- */
 .dropdown-button {
     @extend .button;
-    &::after { content: " \25BE"; }
+    &::after {
+      content: '\25BE';
+    }
 }
 ```
 
