@@ -1,21 +1,17 @@
-#XM Front-End Development Guidelines and Documentation
+# Jekyll Static Site Builder
 
-These are the guidelines and documentation for front-end development of all projects with immediate effect.
+## Steps to update the site
 
-As front-end technologies improve, our documentation will also be updated to keep up with times.
+### Step 1:
+Checkout this repo `https://bitbucket.org/richmediateam/richmedia-static-pages`
 
-Meanwhile, if you have any feedback or suggestions to these guidelines and documentation, feel free to drop us a message!
+### Step 2:
+Run `npm install` from the folder.
 
-## Contents
+### Step 3:
+Run `gulp` and it will generate the site and open up `http://localhost:3000/`
 
- 1. [XM Static Site Generator](_posts/2014-08-26-static-site-generator.markdown)
-
- 2. [JavaScript Style Guide](_posts/2014-08-23-javascript-styleguide.markdown)
-
- 3. [CSS / SCSS Style Guide](_posts/2014-08-23-css-scss-styleguide.markdown)
-
- 4. [SCSS Linter Document](_posts/2014-08-22-scss-linter.markdown)
-
+***
 
 ## Push `_site` files & folders into richmediateam.bitbucket.org
 
