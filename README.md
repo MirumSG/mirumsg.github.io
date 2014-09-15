@@ -10,6 +10,7 @@ Run `npm install` from the folder.
 
 ### Step 3:
 Run `gulp` and it will generate the site and open up `http://localhost:3000/`
+This will create an `_site` folder with all static html ans assets.
 
 ***
 
