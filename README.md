@@ -15,3 +15,24 @@ Meanwhile, if you have any feedback or suggestions to these guidelines and docum
  3. [CSS / SCSS Style Guide](_posts/2014-08-23-css-scss-styleguide.markdown)
 
  4. [SCSS Linter Document](_posts/2014-08-22-scss-linter.markdown)
+
+
+```
+# Go to the folder
+> cd folder
+
+# Initiate Git
+> git init
+
+# Add all subfolders & files
+> add .
+
+# Make the commit
+> git commit -m 'Initial commit'
+
+# Add the remote BitBucket folder
+> git remote add origin https://bitbucket.org/richmediateam/richmedia-static-pages
+
+# Push stuff to BitBucket
+> git push -u origin master 
+```
