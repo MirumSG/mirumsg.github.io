@@ -17,6 +17,8 @@ Meanwhile, if you have any feedback or suggestions to these guidelines and docum
  4. [SCSS Linter Document](_posts/2014-08-22-scss-linter.markdown)
 
 
+## Push `_site` files & folders into richmediateam.bitbucket.org
+
 ```
 # Go to the folder
 > cd folder
@@ -31,7 +33,7 @@ Meanwhile, if you have any feedback or suggestions to these guidelines and docum
 > git commit -m 'Initial commit'
 
 # Add the remote BitBucket folder
-> git remote add origin https://bitbucket.org/richmediateam/richmedia-static-pages
+> git remote add origin https://bitbucket.org/richmediateam/richmediateam.bitbucket.org
 
 # Push stuff to BitBucket
 > git push -u origin master 
