@@ -9,12 +9,20 @@ var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
+var isWindows = /^win/.test(require('os').platform());
+
+
 /**
  * Build the Jekyll Site
  */
 gulp.task('jekyll-build', function (done) {
+    var command = 'jekyll';
+
     browserSync.notify(messages.jekyllBuild);
-    return cp.exec('jekyll', ['build'], {stdio: 'inherit'})
+    if(isWindows){
+      command = 'jekyll.bat';
+    }
+    return cp.spawn(command, ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
 

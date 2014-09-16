@@ -11,6 +11,7 @@ This static site generator is built with [Gulp.js](http://gulpjs.com/) running o
 Gulp.js is what we call a JavaScript Task Runner. It helps you automate repetitive tasks such as minification, compilation, unit testing, linting, etc.
 
 ### Getting started
+## Hello
 
 * Install Node.js<br/>
 <http://nodejs.org/download/>
@@ -54,7 +55,7 @@ $ gulp
 * [Neat](#neat)
 * [EditorConfig](#editorconfig)
 
-<br/><br/><br/>
+<br/><br/>
 ## BrowserSync
 
 Why use BrowserSync?
