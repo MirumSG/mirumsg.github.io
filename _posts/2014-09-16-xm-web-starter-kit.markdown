@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "XM Static Site Generator"
-date:   2014-08-26
+title:  "XM Web Starter Kit"
+date:   2014-09-16
 categories: gulp javascript node.js handlebars scss
 ---
 
