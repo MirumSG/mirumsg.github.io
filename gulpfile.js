@@ -23,7 +23,7 @@ gulp.task('jekyll-build', function (done) {
       command = 'jekyll.bat';
     }
     return cp.spawn(command, ['build'], {stdio: 'inherit'})
-        .on('close', done);
+      .on('close', done);
 });
 
 /**
