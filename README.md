@@ -3,12 +3,15 @@
 ## Steps to update the site
 
 ### Step 1:
-Checkout this repo `https://bitbucket.org/richmediateam/richmedia-static-pages`
+Run `gem install jekyll`
 
 ### Step 2:
-Run `npm install` from the folder.
+Checkout this repo `https://bitbucket.org/richmediateam/richmedia-static-pages`
 
 ### Step 3:
+Run `npm install` from the folder.
+
+### Step 4:
 Run `gulp` and it will generate the site and open up `http://localhost:3000/`
 
 This will create an `_site` folder with all static html ans assets.
