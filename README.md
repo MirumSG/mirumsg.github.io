@@ -6,7 +6,7 @@
 Run `gem install jekyll`
 
 ### Step 2:
-Checkout this repo `https://bitbucket.org/richmediateam/richmedia-static-pages`
+Clone this repo `https://bitbucket.org/richmediateam/richmedia-static-pages`
 
 ### Step 3:
 Run `npm install` from the folder.
