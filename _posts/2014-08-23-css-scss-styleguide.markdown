@@ -568,7 +568,7 @@ Makes it easier to debug and identify JS issues as well.
 
 ####5.7 - Quasi-qualified selectors
 
----- *** This seems to apply to CSS only, using SASS defeats the point to follow this rule ----
+####This seems to apply to CSS only, using SASS defeats the point to follow this rule
 We should never write qualified selectors, for example: ul.nav {} if you can just have .nav.
 Qualifying selectors decreases selector performance, inhibits the potential for reusing a class on a different type of element
 and it increases the selector’s specificity. These are all things that should be avoided at all costs.
