@@ -94,6 +94,7 @@ Prefer hexadecimal color codes over color keywords.
 color: green;
 ```
 
+
 **Good: hexadecimal color**
 ```scss
 color: #0f0;
