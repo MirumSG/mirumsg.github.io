@@ -26,6 +26,12 @@ $ npm install --global gulp
 * [Download](https://github.com/XM-RichMedia/XM-Web-Boilerplate/archive/master.zip) or clone the boilerplate from [Github](https://github.com/XM-RichMedia/XM-Web-Boilerplate)<br/>
 and copy the source files into your project folder.
 
+* Install scss-lint plugin (Required for SCSS Linting):
+
+```js
+gem install scss-lint
+```
+
 * Install all dependency:
 
 ```js
@@ -38,6 +44,11 @@ $ npm install
 $ gulp
 ```
 
+---
+
+### WINDOWS users take note:
+Refer to the link on installation of Jekyll.<br>
+<http://jekyll-windows.juthilo.com/5-running-jekyll/>
 
 ---
 
