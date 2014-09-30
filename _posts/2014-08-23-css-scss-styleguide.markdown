@@ -7,8 +7,6 @@ categories: css scss
 
 ---
 
-TEST
-
 #####--------------------- NOTE: IE Browsers limitations ---------------------
 * IE 6 - 9 - 4096 rule limit: 4096 selectors limit per CSS file
 * IE 6 - 9 browsers may @import up to 31 CSS files
@@ -33,8 +31,8 @@ TEST
 The above shows how many CSS files are currently loaded at a time for different browsers.
 How many CSS files should be loaded on any websites?
 
-    1. one, two, or three ( ref: http://css-tricks.com/one-two-three/ )
-    2. As little as possible, less then 20
+  1. one, two, or three ( ref: http://css-tricks.com/one-two-three/ )
+  2. As little as possible, less then 20
 
 Keep multiple files during development, and lesser files for deployment
 
@@ -49,15 +47,15 @@ This is a subjective point, good for bigger projects.
 The **\$** prefixing the name of the section allows us to run a find **([Cmd|Ctrl]+F)** for **$[SECTION-NAME]** and limit our search scope to section titles only.
 
 ```
-/*  -----------------------------------------------------
-    $CONTENTS
-    -----------------------------------------------------   */
+/*-----------------------------------------------------
+  $CONTENTS
+  -----------------------------------------------------*/
 /**
-    * CONTENTS ..........................................
-    * RESET .............................................
-    * Module ............................................
-    * Layout ............................................
-    * Theme .............................................
+  * CONTENTS ..........................................
+  * RESET .............................................
+  * Module ............................................
+  * Layout ............................................
+  * Theme .............................................
 */
 ```
 
@@ -86,12 +84,12 @@ Reference from: [Idiomatic-css](https://github.com/necolas/idiomatic-css)
 .selector-month:hover,
 .selector-fullyear:hover,
 .selector-year:hover {
-    color: #7EA0E2;
+  color: #7EA0E2;
 }
 
 /*  --- Wrong --- */
 .selector-day:hover, .selector-month:hover, .selector-fullyear:hover, .selector-year:hover {
-    color: #7EA0E2;
+  color: #7EA0E2;
 }
 
 ```
@@ -101,12 +99,12 @@ Reference from: [Idiomatic-css](https://github.com/necolas/idiomatic-css)
 ```css
 /*  --- Correct --- */
 div.selector {
-    margin: 10px 0 30px;
+  margin: 10px 0 30px;
 }
 
 /*  --- Wrong --- */
 div.selector{
-    margin: 10px 0 30px;
+  margin: 10px 0 30px;
 }
 ```
 
@@ -115,15 +113,15 @@ div.selector{
 ```css
 /* --- Correct --- */
 div.selector {
-    clear: both;
-    padding: 20px;
-    margin: 0 0 10px;
-    text-align: left;
+  clear: both;
+  padding: 20px;
+  margin: 0 0 10px;
+  text-align: left;
 }
 
 /*  --- Wrong --- */
 div.selector {
-    clear: both; padding: 20px; margin: 0 0 10px; text-align: left;
+  clear: both; padding: 20px; margin: 0 0 10px; text-align: left;
 }
 ```
 
@@ -132,14 +130,14 @@ div.selector {
 ```css
 /*  --- Correct --- */
 .selector {
-    display: block;
-    margin-top: 15px;
+  display: block;
+  margin-top: 15px;
 }
 
 /*  --- Wrong --- */
 .selector {
-    display:block;
-    margin-top:15px;
+  display:block;
+  margin-top:15px;
 }
 ```
 
@@ -148,28 +146,28 @@ div.selector {
 ```css
 /*  --- Correct --- */
 .selector {
-    color: #ddd;
-    margin: 1em 0 2em 1em;
+  color: #ddd;
+  margin: 1em 0 2em 1em;
 }
 
 /*  --- Wrong --- */
 .selector {
-    color: #DDD;
-    margin-top: 1em;
-    margin-right: 0;
-    margin-bottom: 2em;
-    margin-left: 1em;
+  color: #DDD;
+  margin-top: 1em;
+  margin-right: 0;
+  margin-bottom: 2em;
+  margin-left: 1em;
 }
 
 .selector {
-    color: #DDDDDD;
+  color: #DDDDDD;
 }
 ```
 ####3.6 - Use single or double quotes consistently. Preference is for double quotes, e.g., content: "".
 
 ```css
 .selector {
-    content: "\e008";
+  content: "\e008";
 }
 ```
 
@@ -177,9 +175,9 @@ div.selector {
 
 ```css
 .selector[type="text"] {
-    border: 1px solid #fff;
-    background-color: #fff;
-    color: #000;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #000;
 }
 ```
 
@@ -188,16 +186,16 @@ div.selector {
 ```css
 /*  --- Correct --- */
 .selector {
-    display: block;
-    margin-bottom: 0;
-    padding: 0;
+  display: block;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 /*  --- Wrong --- */
 .selector {
-    display: block;
-    margin-bottom: 0px;
-    padding: 0px;
+  display: block;
+  margin-bottom: 0px;
+  padding: 0px;
 }
 ```
 ####3.9 - Include a space after each comma in comma-separated property or function values.
@@ -218,20 +216,20 @@ Everytime when you need to place a number, consider if it can be avoided or cont
 
 "Every hard-coded measurement you set is a commitment you might not necessarily want to keep."
 
-####3.14 - 4 space tab indented ( configure in your IDE )
+####3.14 - 2 space tab indented ( configure in your IDE )
 
 ```css
 /*  --- Correct --- */
 .bx-selector {
-    left: 10px;
-    @include spritebg('../images/bg.png', 30px, 29px, 0px, -1091px);
+  left: 10px;
+  @include spritebg('../images/bg.png', 30px, 29px, 0px, -1091px);
 }
 
 /*  --- Wrong --- */
 .bx-selector {
     left: 10px
     @include spritebg('../images/bg.png',30px,29px,0px,-1091px)
-    }
+  }
 ```
 
 ####3.15 - Large blocks of single declarations can use a slightly different, single-line format.
@@ -250,18 +248,18 @@ Can be arranged across multiple lines in an effort to improve readability and pr
 ```css
 /*  --- Example --- */
 .selector {
-    background:
-        url('select2-spinner.gif') no-repeat 100%,
-        -webkit-gradient(
-            linear,
-            left bottom,
-            left top,
-            color-stop(0.85, white),
-        color-stop(0.99, #eeeeee));
+  background:
+    url('select2-spinner.gif') no-repeat 100%,
+    -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.85, white),
+    color-stop(0.99, #eeeeee));
 
-    box-shadow:
-        1px 1px 1px #000,
-        2px 2px 1px 1px #ccc inset;
+  box-shadow:
+    1px 1px 1px #000,
+    2px 2px 1px 1px #ccc inset;
 }
 ```
 
@@ -292,12 +290,12 @@ So instead of styling a specific `<h2>` with .myObject h2 {...}, create and appl
 ```css
 /*  --- Correct --- */
 .category {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /*  --- Wrong --- */
 .selector h2.category {
-    font-weight: bold;
+  font-weight: bold;
 }
 ```
 
@@ -305,20 +303,20 @@ So instead of styling a specific `<h2>` with .myObject h2 {...}, create and appl
 This large chunk of whitespace is quickly noticeable when scrolling quickly through larger files.
 
 ```css
-/*  -----------------------------------------------------
-    $RESET
-    -----------------------------------------------------   */
-    .selector {
-        some styles
-    }
+/*-----------------------------------------------------
+  $RESET
+  -----------------------------------------------------*/
+  .selector {
+      some styles
+  }
 
 
 
 
 
-/*  -----------------------------------------------------
-    $TYPOGRAPHY
-    -----------------------------------------------------   */
+/*-----------------------------------------------------
+  $TYPOGRAPHY
+  -----------------------------------------------------*/
 
 
 ```
@@ -329,9 +327,9 @@ Some uses the "START" & "END" comments:
 
 ```css
 /*  ----- Content Styles - START -----  */
-    .selector {
-        some styles
-    }
+  .selector {
+    some styles
+  }
 /*  ----- Content Styles - END -----  */
 ```
 
@@ -367,38 +365,38 @@ I've break Typography out as one group. [Reference link](https://github.com/neco
 ```css
 .other-rule {}
 .selector {
-    /* --- @extend & @include statements always on top --- */
-    @extend .other-rule;
-    @include clearfix();
-    @include box-sizing(border-box);
+  /* --- @extend & @include statements always on top --- */
+  @extend .other-rule;
+  @include clearfix();
+  @include box-sizing(border-box);
 
-    /* --- Display & Box Model --- */
-    display: inline-block;
-    overflow: hidden;
-    box-sizing: border-box;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    border: 10px solid #333;
-    margin: 10px;
+  /* --- Display & Box Model --- */
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 10px solid #333;
+  margin: 10px;
 
-    /* --- Positioning --- */
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  /* --- Positioning --- */
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
-    /* --- Typography --- */
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 16px;
-    text-align: right;
+  /* --- Typography --- */
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: right;
 
-    /* --- Others --- */
-    background: #000;
-    cursor: default;
+  /* --- Others --- */
+  background: #000;
+  cursor: default;
 }
 ```
 
@@ -416,7 +414,7 @@ Sass mixins should use camelCase for their names, e.g: borderRadiusIdentical
 [SMURF: Scalable, Modular, reUsable Rails Frontends](http://railslove.com/blog/2012/11/09/taking-sass-to-the-next-level-with-smurf-and-extend)
 
 ####5.1 - Learning to think in Objects (Think of your CSS as objects / modules)
-    Objects are small little chunks of functionality. You can think of them as interface elements like headers, footers, buttons, and content areas.
+  Objects are small little chunks of functionality. You can think of them as interface elements like headers, footers, buttons, and content areas.
 
 ####5.2 - Parent-Child relationships
 
@@ -424,12 +422,12 @@ Sass mixins should use camelCase for their names, e.g: borderRadiusIdentical
 /*  --- Example --- */
 // Posts
 .post {
-    margin: 2em 0;
+  margin: 2em 0;
 }
 
 .post-title {
-    font-size: 2em;
-    font-weight: normal;
+  font-size: 2em;
+  font-weight: normal;
 }
 ```
 
@@ -439,20 +437,20 @@ It's especially handy for a set of objects and their container.
 ```css
 /*  --- Example --- */
 .tabs {
-    border-bottom: 1px solid silver;
-    text-align: center;
+  border-bottom: 1px solid silver;
+  text-align: center;
 }
 
 .tab {
-    background: #e5e5e5;
-    border: 1px solid silver;
-    @include border-top-radius(3px);
-    color: #666;
-    display: inline-block;
-    padding: 7px 18px 7px;
-    text-decoration: none;
-    position: relative;
-    top: 1px;
+  background: #e5e5e5;
+  border: 1px solid silver;
+  @include border-top-radius(3px);
+  color: #666;
+  display: inline-block;
+  padding: 7px 18px 7px;
+  text-decoration: none;
+  position: relative;
+  top: 1px;
 }
 ```
 
@@ -462,21 +460,21 @@ Most object-oriented systems have another concept for declaring that an object i
 ```css
 /*  --- Example --- */
 .button {
-    background: linear-gradient(#eee, #ddd);
-    border: 1px solid #999;
-    @include border-radius(5px);
-    color: #666;
-    cursor: pointer;
-    padding: 4px 10px 5px;
+  background: linear-gradient(#eee, #ddd);
+  border: 1px solid #999;
+  @include border-radius(5px);
+  color: #666;
+  cursor: pointer;
+  padding: 4px 10px 5px;
 
-    &:hover {
-        background: linear-gradient(#fff, #eee);
-        color: #111;
-    }
+  &:hover {
+    background: linear-gradient(#fff, #eee);
+    color: #111;
+  }
 
-    .dropdown-button {
-        &::after { content: " \25BE"; }
-    }
+  .dropdown-button {
+    &::after { content: " \25BE"; }
+  }
 }
 ```
 
@@ -488,10 +486,10 @@ HTML codes:
 ```css
 /*  --- Example --- */
 .dropdown-button {
-    @extend .button;
-    &::after {
-      content: '\25BE';
-    }
+  @extend .button;
+  &::after {
+    content: '\25BE';
+  }
 }
 ```
 
@@ -502,34 +500,34 @@ A modifier can be used to indicate that the object is in a certain state or to m
 ```scss
 /*  --- Example --- */
 .tab {
-    background: #e5e5e5;
-    border: 1px solid silver;
-    @include border-top-radius(3px);
-    color: #666;
-    display: inline-block;
-    padding: 7px 18px 7px;
-    text-decoration: none;
-    position: relative;
-    top: 1px;
+  background: #e5e5e5;
+  border: 1px solid silver;
+  @include border-top-radius(3px);
+  color: #666;
+  display: inline-block;
+  padding: 7px 18px 7px;
+  text-decoration: none;
+  position: relative;
+  top: 1px;
 
-    &.is-selected {
-        background: white;
-        border-bottom-color: white;
-        color: #333;
-    }
+  &.is-selected {
+    background: white;
+    border-bottom-color: white;
+    color: #333;
+  }
 }
 
 .textbox {
-    font: 13px sans-serif;
-    border: 1px solid #ccc;
-    border-top: 1px solid #999;
-    border-radius: 2px;
-    padding: 2px 4px;
+  font: 13px sans-serif;
+  border: 1px solid #ccc;
+  border-top: 1px solid #999;
+  border-radius: 2px;
+  padding: 2px 4px;
 
-    &:focus { outline: none; border: 1px solid #69e; }
+  &:focus { outline: none; border: 1px solid #69e; }
 
-    &.large { font-size: 18px; }
-    &.small { font-size: 11px; padding: 1px 2px; }
+  &.large { font-size: 18px; }
+  &.small { font-size: 11px; padding: 1px 2px; }
 }
 ```
 
@@ -570,7 +568,7 @@ Makes it easier to debug and identify JS issues as well.
 
 ####5.7 - Quasi-qualified selectors
 
----- *** This seems to apply to CSS only, using SASS defeats the point to follow this rule ----
+####This seems to apply to CSS only, using SASS defeats the point to follow this rule
 We should never write qualified selectors, for example: ul.nav {} if you can just have .nav.
 Qualifying selectors decreases selector performance, inhibits the potential for reusing a class on a different type of element
 and it increases the selector’s specificity. These are all things that should be avoided at all costs.

@@ -47,7 +47,7 @@ $ gulp
 ---
 
 ### WINDOWS users take note:
-Refer to the link on installation of Jekyll.<br>
+Refer to the link on installation of Jekyll.<br> 
 <http://jekyll-windows.juthilo.com/5-running-jekyll/>
 
 ---
