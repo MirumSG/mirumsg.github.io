@@ -46,12 +46,6 @@ $ gulp
 
 ---
 
-### WINDOWS users take note:
-Refer to the link on installation of Jekyll.<br> 
-<http://jekyll-windows.juthilo.com/5-running-jekyll/>
-
----
-
 ## Task integrated into the generator:
 
 * [BrowserSync](#browsersync)
