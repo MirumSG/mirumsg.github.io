@@ -66,8 +66,8 @@ index.html
 * Using whitespace to seperate chunk of codes is welcome.
 * Compression of CSS and JavaScript files can be done either on server-side or during build.
 
-<a name="favicon" class="anchor" aria-hidden="true"></a>
-###general-Favicon
+<a name="general-favicon" class="anchor" aria-hidden="true"></a>
+###Favicon
 * [Favicon](http://css-tricks.com/favicon-quiz/) Requirements
 * [Favicon Generator](http://realfavicongenerator.net/)
 
@@ -89,8 +89,9 @@ index.html
 * Image ```title``` should provide additional information in the form of a title.
 
 For example:
-```
-<img src="#" alt="Sunset" title="Scenic view of Maya Bay">
+
+```html
+<img src="#" alt="Couples watching the sunset" title="Scenic view of Maya Bay">
 ```
 
 ---
@@ -175,6 +176,7 @@ For example:
 
 * All form elements MUST be enclosed within a ```<form>``` tag.
 * All form elements MUST have a ```tabindex``` attribute defined.
+* Use CSS to define the width of input fields instead of the ```size``` attribute.
 
 For example:
 
