@@ -209,12 +209,7 @@ This is how the default page would look like when using the page_footer partial 
 ## JSDoc
 
 Auto generate Javascript documentation based on JSDoc syntax.
-Auto generate Javascript documentation based on JSDoc syntax.
-Auto generate Javascript documentation based on JSDoc syntax.
-Auto generate Javascript documentation based on JSDoc syntax.
-Auto generate Javascript documentation based on JSDoc syntax.
-Auto generate Javascript documentation based on JSDoc syntax.
-Auto generate Javascript documentation based on JSDoc syntax.
+
 
 See JSDoc documentation [here](http://usejsdoc.org/index.html)
 
