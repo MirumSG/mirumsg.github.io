@@ -212,10 +212,10 @@ Auto generate Javascript documentation based on JSDoc syntax
 
 See JSDoc documentation [here](http://usejsdoc.org/index.html)
 
-
 Examples:
 
 ```js
+
 /**
  * @function setCookie
  * @memberof PROJECTNAME.helper
@@ -228,6 +228,7 @@ Examples:
  * PROJECTNAME.helper.setCookie('cookiename', 'hello world', 99);
  *
  */
+
 ```
 
 ---
