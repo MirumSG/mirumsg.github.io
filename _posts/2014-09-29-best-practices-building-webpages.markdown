@@ -19,7 +19,7 @@ In order to keep our coding standards consistent, we've listed the best practice
   * [Doctype](#html-doctype)
   * [Language](#html-language)
   * [Charset](#html-charset)
-  * [Rendering Mode](#html-renderingmode)
+  * [IE Compatibility more](#html-iecompatibility)
   * [Module Naming Convention](#html-modulenamingconvention)
   * [Forms](#html-forms)
 * [CSS](../css-scss-styleguide/)
@@ -65,6 +65,9 @@ index.html
 * Feel free to include comments to describe what each chunk of code does.
 * Using whitespace to seperate chunk of codes is welcome.
 * Compression of CSS and JavaScript files can be done either on server-side or during build.
+* Use double quotes on HTML attributes.
+* Use only lowercase.
+* Do not use trailing slash in self-closing elements, e.g.: ```<img src="example.jpg" alt="example image">```
 
 <a name="general-favicon" class="anchor" aria-hidden="true"></a>
 ###Favicon
@@ -130,9 +133,10 @@ For example:
 <meta charset="utf-8">
 ```
 
-<a name="html-renderingmode" class="anchor" aria-hidden="true"></a>
-###Rendering Mode
+<a name="html-iecompatibility" class="anchor" aria-hidden="true"></a>
+###IE Compatibility mode
 * Use X-UA-Compatible, IE=edge.
+
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
