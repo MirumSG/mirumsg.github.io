@@ -53,6 +53,7 @@ $ gulp
 * [SCSS Linting](#scss-linting)
 * [JSHint](#jshint)
 * [Handlebars](#handlebars)
+* [JSDoc](#jsdoc)
 * [Image Optimization](#image-optimization)
 * [Autoprefixer](#autoprefixer)
 * [Bourbon](#bourbon)
@@ -201,6 +202,31 @@ This is how the default page would look like when using the page_footer partial 
 <p>Welcome to XM Static generator!</p>
 
 {{ "{{> layout/footer "}}}}
+```
+
+---
+
+## JSDoc
+
+Auto generate Javascript documentation based on JSDoc syntax
+
+See JSDoc documentation [here](http://usejsdoc.org/index.html)
+
+Examples:
+
+```js
+/**
+ * @function setCookie
+ * @memberof PROJECTNAME.helper
+ * @public
+ * @param {string} name - Name of the cookie
+ * @param {string} value - Value of the cookie
+ * @param {string} days - Number of days to expire
+ *
+ * @example
+ * PROJECTNAME.helper.setCookie('cookiename', 'hello world', 99);
+ *
+ */
 ```
 
 ---
