@@ -19,7 +19,8 @@ In order to keep our coding standards consistent, we've listed the best practice
   * [Doctype](#html-doctype)
   * [Language](#html-language)
   * [Charset](#html-charset)
-  * [IE Compatibility more](#html-iecompatibility)
+  * [IE Compatibility mode](#html-iecompatibility)
+  * [Social Meta](#html-social-meta)
   * [Module Naming Convention](#html-modulenamingconvention)
   * [Forms](#html-forms)
 * [CSS](../css-scss-styleguide/)
@@ -142,6 +143,34 @@ For example:
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 ```
 
+<a name="html-social-meta" class="anchor" aria-hidden="true"></a>
+###Meta Tags for Social Networks
+
+* Always remember to define meta tags for social networks
+
+```html
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@site_username">
+<meta name="twitter:title" content="Site Title">
+<meta name="twitter:description" content="Up to 200 characters.">
+<meta name="twitter:creator" content="@creator_username">
+<meta name="twitter:image:src" content="http://www.yourdomain.com/img.jpg">
+<meta name="twitter:domain" content="http://www.yourdomain.com">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Site Title"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://www.yourdomain.com/"/>
+<meta property="og:image" content="http://www.yourdomain.com/img.jpg"/>
+<meta property="og:description" content="Site Description"/>
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Site Title">
+<meta itemprop="description" content="Site Description">
+<meta itemprop="image" content="http://www.yourdomain.com/img.jpg">
+```
+
 <a name="html-modulenamingconvention" class="anchor" aria-hidden="true"></a>
 ###Module-naming convention
 * Format: module-name--submodule-name.
@@ -208,7 +237,7 @@ For example:
 #Performance
 
 <a name="performance-asset-optimization" class="anchor" aria-hidden="true"></a>
-###Asset Optimization
+##Asset Optimization
 * [Enable gzip compression.](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer#text-compression-with-gzip)
 * Remember to minify css & uglify js when website is ready to go live.
 * Alternatively, we can also use source maps on minified CSS.
@@ -222,5 +251,6 @@ For example:
 
 <a name="responsive-web-design-considerations" class="anchor" aria-hidden="true"></a>
 #Responsive Web Design Considerations
-* Advise against using '...' script-based ellipsis. It takes time to load, causes too much recalculations when the window size changes, and Flash of Unstyled Text (FOUT). If needed, use a gradient fade overlay to emulate "more content below" instead.
+
+* Advise against using script based ellipsis. Use a gradient fade overlay to emulate more content below instead.
 * Advise against revealing Call to Action (CTA) on hover. Touch devices don't have hover state and hence the CTA won't be obvious.
