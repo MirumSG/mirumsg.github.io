@@ -5,44 +5,66 @@ date:   2014-09-16
 categories: gulp javascript node.js handlebars scss
 ---
 
-This static site generator is built with [Gulp.js](http://gulpjs.com/) running on top of [Node.js](http://nodejs.org/).
+This Web Starter Kit is built with [Gulp.js](http://gulpjs.com/) running on top of [Node.js](http://nodejs.org/).
+
 
 <img src="https://raw2.github.com/gulpjs/artwork/master/gulp-2x.png" width="80"><img src="http://saptarshichakraborty.me/blog3571/wp-content/uploads/2013/07/Nodejs_logo_light.png" width=200">
 Gulp.js is what we call a JavaScript Task Runner. It helps you automate repetitive tasks such as minification, compilation, unit testing, linting, etc.
 
 ### Getting started
 
-* Install Node.js<br/>
+#### Step 1:
+Install Node.js<br/>
 <http://nodejs.org/download/>
 
-* Install gulp globally:
+#### Step 2:
+Install Ruby (for windows user only)<br/>
+<http://rubyinstaller.org/>
+
+#### Step 3:
+Install Git (for windows user only)<br/>
+<http://git-scm.com/>
+
+#### Step 4:
+Install gulp globally:
 
 ```js
 $ npm install --global gulp
 ```
 
-* Create your project folder
-
-* [Download](https://github.com/XM-RichMedia/XM-Web-Boilerplate/archive/master.zip) or clone the boilerplate from [Github](https://github.com/XM-RichMedia/XM-Web-Boilerplate)<br/>
-and copy the source files into your project folder.
-
-* Install scss-lint plugin (Required for SCSS Linting):
+#### Step 5:
+Install scss-lint plugin (Required for SCSS Linting):
 
 ```js
 gem install scss-lint
 ```
 
-* Install all dependency:
+#### Step 6:
+Create your project folder
+
+[Download](https://bitbucket.org/richmediateam/xm-web-starter-kit/get/8668e6f8c101.zip) or clone the boilerplate from [Bitbucket](https://bitbucket.org/richmediateam/xm-web-starter-kit/)<br/>
+and copy the source files into your project folder.
+
+
+#### Step 7:
+Install all dependency:
 
 ```js
 $ npm install
 ```
 
-* Run Gulp:
+#### Step 8:
+Run Gulp for development:
 
-```js
-$ gulp
-```
+`gulp serve` or just `gulp`
+
+Run Gulp for CMS:
+
+`gulp build -s` or just `gulp build`
+
+Run Gulp for deployment:
+
+`gulp build -p`
 
 ---
 

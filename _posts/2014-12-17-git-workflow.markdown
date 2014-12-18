@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git (Bitbucket) Team Workflow"
+title:  "Git Team Workflow"
 date:   2014-12-17
 categories: best practices html
 ---
