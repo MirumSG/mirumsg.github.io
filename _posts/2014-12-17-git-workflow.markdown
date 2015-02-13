@@ -11,9 +11,9 @@ The `master` branch is always deployable. There shouldn't be any half written co
 `master` branch always shows the current state of a production/release code (the same set of code int live server).
 Any new team member should always pull code from `master` branch.
 
-##Deploy branch
+##Develop branch
 ---
-The `develop` branch is the main branch for ongoing development. Feature branches area cerated from and merged back into the `develop` branch.
+The `develop` branch is the main branch for ongoing development. Feature branches are created from and merged back into the `develop` branch.
 When implementing a new feature, branch from `develop` and start doing the changes.
 
 ##Feature branch

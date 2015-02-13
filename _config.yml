@@ -12,9 +12,9 @@ lsi:              false
 permalink:    	   /guides/:title
 
 # Setup
-title:            XM Front-End Development Guidelines and Documentation
-tagline:          'XM Front-End Development Guidelines and Documentation'
-description:      'XM Front-End Development Guidelines and Documentation'
+title:            Mirum SG Front-End Development Guidelines and Documentation
+tagline:          'Mirum SG Front-End Development Guidelines and Documentation'
+description:      'Mirum SG Front-End Development Guidelines and Documentation'
 url:              http://richmediateam.bitbucket.org/
 baseurl:          /
 

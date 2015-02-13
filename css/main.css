@@ -478,7 +478,7 @@ html {
   padding: 2rem 1rem;
   background-color: #202020; }
   .sidebar img {
-    width: 70px;
+    width: 200px;
     margin: 0 auto; }
 
 @media (min-width: 48em) {
@@ -487,10 +487,10 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 20rem;
     text-align: left; }
     .sidebar img {
-      width: 100px;
+      width: 200px;
       margin: 0; } }
 
 /* Sidebar links */
@@ -642,10 +642,11 @@ a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
 
 /* XM theme */
 .theme-base-xm .sidebar {
-  background-color: #ffba00; }
+  background: url('../images/mirum-blue.jpg') no-repeat top left;
+  background-size: cover; }
 
 .theme-base-xm .content a, .theme-base-xm .related-posts li a:hover {
-  color: #ff9600; }
+  color: rbg(76, 200, 237); }
 
 .theme-base-xm .related h2 {
   font-size: 14px; }
