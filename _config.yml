@@ -27,7 +27,7 @@ paginate:         5
 # Custom vars
 version:          2.1.0
 
-bitbucket:
-  repo:           https://bitbucket.org/richmediateam
+github:
+  repo:           https://github.com/MirumSG
 
 exclude: ['sass', 'node_modules', 'gulpfile.js', 'package.json', 'README.md', 'LICENSE.md']
