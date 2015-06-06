@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Forking Workflow"
+title:  "Git Forking Workflow"
 date:   2015-06-06
 categories: best practices html git
 ---
