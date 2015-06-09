@@ -5,6 +5,10 @@ date:   2015-06-06
 categories: best practices html git
 ---
 
+
+
+![Flow chart of forking workflow](/images/forking-workflow/centralized-github-4.png)
+
 |Steps                  |                                                    |
 |-----------------------|----------------------------------------------------|
 |Fork a copy from the main repo| ![](/images/forking-workflow/1-forking.png)|
