@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Email Template Best Practices"
-date:   2015-12-04
+date:   2015-10-04
 categories: best practices html git
 ---
 
