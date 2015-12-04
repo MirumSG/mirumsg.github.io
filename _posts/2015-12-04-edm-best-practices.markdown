@@ -56,6 +56,7 @@ This is especially important for headlines, special offers and other calls to ac
 
 ### Eye-catching Call to Action
 ![Eye-catching Call to Action](/images/internal_img2.jpg)
+
 Calls to action (CTAs) are usually the most important part of a marketing email. They should be eye-catching, well-placed and above all, usable. The criteria for a great CTA are different depending on whether it is to be selected by a cursor or a finger. This is a powerful function of responsive email; to provide users on smaller touch-screen devices with finger-friendly buttons that are not affected by image blockers.
 
 ##  Responsive Email Design
