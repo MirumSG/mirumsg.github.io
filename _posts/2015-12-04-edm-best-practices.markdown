@@ -12,7 +12,10 @@ The standard width for most emails is around 550-600 pixels, although the trend 
 
 
 ### Rule #2. Use Background Images Sparingly
+
 Since version 2007, Outlook has provided zero background image support. When using layered images in your design, be sure they can degrade gracefully. Always use a solid background color as a fallback for Outlook and make sure no crucial information or imagery exists solely in a background image.
+
+![background images support](/images/css-background.jpg)
 
 [See all CSS3 style that are support in different email clients](https://www.campaignmonitor.com/css/)
 
@@ -38,6 +41,7 @@ It’s still wise to begin with a mobile-first design for optimal viewing across
 Multi-column layouts don’t have to be off-limits for mobile, but keep them to a minimum as needed—and try to avoid going above a three-column layout.
 
 ### Rule #6: White Screen of Death
+![Alt text with colour text](/images/white-text.jpg)
 Avoid use white text for Alt text, user will not be able to see any text if images is block by the email client.
 
 ### Rule #7. Use a readable font
