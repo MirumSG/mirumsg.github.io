@@ -54,6 +54,9 @@ High contrast font colours is always recommended for Web, but all the more impor
 ### Rule #8: Use alternate text for important images
 This is especially important for headlines, special offers and other calls to action. Adds alternate text to the most important CTAs, and leaves blank images that are not so important. This is a great idea, it’s less cluttered and readers will be drawn right to the offers.
 
+### Eye-catching Call to Action
+![Eye-catching Call to Action](/images/internal_img2.jpg)
+Calls to action (CTAs) are usually the most important part of a marketing email. They should be eye-catching, well-placed and above all, usable. The criteria for a great CTA are different depending on whether it is to be selected by a cursor or a finger. This is a powerful function of responsive email; to provide users on smaller touch-screen devices with finger-friendly buttons that are not affected by image blockers.
 
 ##  Responsive Email Design
 Responsive email identifies a device’s screen or display size using the @media query and serves the appropriate layout determined by the designer. The most common “breakpoint” is 480 pixels (iPhone specs), but any breakpoint can be set to target various screen sizes including tablets and phablets.
