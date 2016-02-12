@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SCSS Linter Document"
-date:   2014-08-22 16:36:22
+date:   2015-08-22 16:36:22
 categories: css scss
 ---
 

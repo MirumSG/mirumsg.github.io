@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CSS / SCSS Style Guide"
-date:   2014-08-23
+date:   2015-08-23
 categories: css scss
 ---
 

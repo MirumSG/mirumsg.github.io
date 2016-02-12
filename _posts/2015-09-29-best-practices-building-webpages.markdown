@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Best Practices for Building Websites"
-date:   2014-09-29
+date:   2015-09-29
 categories: best practices html
 ---
 

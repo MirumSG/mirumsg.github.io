@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git Team Workflow"
-date:   2014-12-17
+date:   2015-04-17
 categories: best practices html
 ---
 

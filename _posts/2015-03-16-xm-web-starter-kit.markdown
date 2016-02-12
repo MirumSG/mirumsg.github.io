@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "XM Web Starter Kit"
-date:   2014-09-16
+date:   2015-03-16
 categories: gulp javascript node.js handlebars scss
 ---
 

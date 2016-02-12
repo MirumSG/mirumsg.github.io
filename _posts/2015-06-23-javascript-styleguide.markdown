@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JavaScript Style Guide"
-date:   2014-08-23
+date:   2015-06-23
 categories: js javascript
 ---
 
