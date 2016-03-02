@@ -5,7 +5,6 @@ date:   2016-03-01
 categories: job
 ---
 
-## Senior Digital Technologist
 Mirum Singapore is looking for an experienced Senior Digital Technologist to help us build and scale a new generation of products working with the latest technology stack. You'll provide leadership across web and mobile development.
 
 ### Responsibilities
