@@ -27,7 +27,7 @@ Understand marketing strategies and concepts as they relate to the product and b
 * Experience with CSS Preprocessors (preferably SASS).
 
 ### Bonus
-Working knowledge of Node.js.
-Experience working with remote team.
+* Working knowledge of Node.js.
+* Experience working with remote team.
 
 If interested please email me at  [liakwee.lee@mirumagency.com](mailto:liakwee.lee@mirumagency.com?subject=Application for Senior Digital Technologist)
