@@ -5,18 +5,18 @@ date:   2015-04-17
 categories: best practices html
 ---
 
-##Master branch
+## Master branch
 ---
 The `master` branch is always deployable. There shouldn't be any half written code or bug in it.
 `master` branch always shows the current state of a production/release code (the same set of code int live server).
 Any new team member should always pull code from `master` branch.
 
-##Develop branch
+## Develop branch
 ---
 The `develop` branch is the main branch for ongoing development. Feature branches are created from and merged back into the `develop` branch.
 When implementing a new feature, branch from `develop` and start doing the changes.
 
-##Feature branch
+## Feature branch
 ---
 If a branch is a fix to some bug, prepend the branch name to `fix-` E.g: `fix-add-boomark-count`.
 And if the branch is add new features, prepend the branch name to `feature-` E.g: `feature-video-playlist`.
@@ -24,7 +24,7 @@ And if the branch is add new features, prepend the branch name to `feature-` E.g
 **Always remember, `master` and `develop` branch should never be worked in directly, always branch out to work.**
 
 
-##Rebase /merge
+## Rebase /merge
 ---
 When a feature or a fix is completed, make sure that your feature branch has the latest changes from the `develop` branch because there may be conflicts.
 All conflict resolution should be fix in your feature branch. If you branched to make a small change/fix and you have not pushed the branch to the remote, rebase `develop` into your feature branch, and then merge your feature branch into `develop`. Push and then feel free to delete your local feature branch.
@@ -48,7 +48,7 @@ As long as the updated code is still on staging, keep it in the `develop` branch
 
 ***\*Always remember to merge `develop` into `master` after live!.***
 
-##Adhoc hotfix
+## Adhoc hotfix
 ---
 If there is some major bug found on live site and we need to address it immediately, since `develop` may include unfinished features, hotfixes should be branched from the current release—which is `master` (because `master` is always deployable!).
 
