@@ -36,12 +36,12 @@ In order to keep our coding standards consistent, we've listed the best practice
 ---
 
 <a name="general-guidelines" class="anchor" aria-hidden="true"></a>
-##General Guidelines
+## General Guidelines
 
 <a name="general-folder-structure" class="anchor" aria-hidden="true"></a>
 ###Folder Structure
 Seperate Development from Build (For LIVE) folder
-####Development Folder
+#### Development Folder
 ```
 /docs
 /html
@@ -53,7 +53,7 @@ Seperate Development from Build (For LIVE) folder
   /scss
   /templates
 ```
-####Build Folder
+#### Build Folder
 ```
 /css
 /fonts
@@ -62,7 +62,7 @@ Seperate Development from Build (For LIVE) folder
 index.html
 ```
 <a name="general-code-redability" class="anchor" aria-hidden="true"></a>
-###Code Readability
+### Code Readability
 * Feel free to include comments to describe what each chunk of code does.
 * Using whitespace to seperate chunk of codes is welcome.
 * Compression of CSS and JavaScript files can be done either on server-side or during build.
@@ -71,23 +71,23 @@ index.html
 * Do not use trailing slash in self-closing elements, e.g.: ```<img src="example.jpg" alt="example image">```
 
 <a name="general-favicon" class="anchor" aria-hidden="true"></a>
-###Favicon
+### Favicon
 * [Favicon](http://css-tricks.com/favicon-quiz/) Requirements
 * [Favicon Generator](http://realfavicongenerator.net/)
 
 ---
 
 <a name="assets" class="anchor" aria-hidden="true"></a>
-##Assets
+## Assets
 
 <a name="assets-icons" class="anchor" aria-hidden="true"></a>
-###Icons
+### Icons
 * Replace simple icons with unicode.
 * Replace complex icons with SVG.
 * [Do not use icon fonts.](https://developers.google.com/web/fundamentals/media/images/use-icons?hl=en#use-icon-fonts-with-caution)
 
 <a name="assets-images" class="anchor" aria-hidden="true"></a>
-###Images
+### Images
 * All images should define ```alt``` text and ```title```.
 * ```alt``` text should describe what the image is about, which will show in the event the image doesn't load.
 * Image ```title``` should provide additional information in the form of a title.
@@ -101,17 +101,17 @@ For example:
 ---
 
 <a name="animation" class="anchor" aria-hidden="true"></a>
-##Animation
+## Animation
 * Keep animations to `opacity` or `transform`.
 * Use CSS to handle animation with JS fallback.
 
 ---
 
 <a name="html" class="anchor" aria-hidden="true"></a>
-##HTML
+## HTML
 
 <a name="html-doctype" class="anchor" aria-hidden="true"></a>
-###Doctype
+### Doctype
 * Use HTML5 doctype.
 
 ```html
@@ -119,7 +119,7 @@ For example:
 ```
 
 <a name="html-language" class="anchor" aria-hidden="true"></a>
-###Language
+### Language
 * Define language in html tag.
 
 ```html
@@ -127,7 +127,7 @@ For example:
 ```
 
 <a name="html-charset" class="anchor" aria-hidden="true"></a>
-###Charset
+### Charset
 * Define charset.
 
 ```html
@@ -144,7 +144,7 @@ For example:
 ```
 
 <a name="html-social-meta" class="anchor" aria-hidden="true"></a>
-###Meta Tags for Social Networks
+### Meta Tags for Social Networks
 
 * Always remember to define meta tags for social networks
 
@@ -172,7 +172,7 @@ For example:
 ```
 
 <a name="html-modulenamingconvention" class="anchor" aria-hidden="true"></a>
-###Module-naming convention
+### Module-naming convention
 * Format: module-name--submodule-name.
 
 **For example:**
@@ -199,7 +199,7 @@ For example:
 ```
 
 <a name="html-forms" class="anchor" aria-hidden="true"></a>
-###Forms
+### Forms
 * Use ```<label>``` to label fields and ```for``` attribute on the corresponding input field. This allows users to select the input field by clicking on the label as well.
 
 ```html
@@ -220,37 +220,37 @@ For example:
 ---
 
 <a name="compatibility" class="anchor" aria-hidden="true"></a>
-#Compatibility
+# Compatibility
 
 <a name="compatibility-cross-browser" class="anchor" aria-hidden="true"></a>
-##Cross-browser compatibility
+## Cross-browser compatibility
 * Use [modernizr](http://modernizr.com/docs/#load) to detect if HTML5 and CSS3 is supported by browser.
 * Use polyfill for IE.
 
 <a name="compatibility-responsive-sites" class="anchor" aria-hidden="true"></a>
-##Responsive Sites
+## Responsive Sites
 * Use [respond.js](https://github.com/scottjehl/Respond) to handle IE8 polyfill for min/max-width CSS3 media queries.
 
 ---
 
 <a name="performance" class="anchor" aria-hidden="true"></a>
-#Performance
+#P erformance
 
 <a name="performance-asset-optimization" class="anchor" aria-hidden="true"></a>
-##Asset Optimization
+## Asset Optimization
 * [Enable gzip compression.](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer#text-compression-with-gzip)
 * Remember to minify css & uglify js when website is ready to go live.
 * Alternatively, we can also use source maps on minified CSS.
 * [Ensure that images are optimized for web.](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)
 
 <a name="performance-critical-rendering" class="anchor" aria-hidden="true"></a>
-##Site Performance
+## Site Performance
 * Follow this guide on [Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/)
 
 ---
 
 <a name="responsive-web-design-considerations" class="anchor" aria-hidden="true"></a>
-#Responsive Web Design Considerations
+# Responsive Web Design Considerations
 
 * Advise against using script based ellipsis. Use a gradient fade overlay to emulate more content below instead.
 * Advise against revealing Call to Action (CTA) on hover. Touch devices don't have hover state and hence the CTA won't be obvious.
